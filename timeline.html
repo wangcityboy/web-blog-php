@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的个人经历</title>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="styles/timeline.css" />
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+	var h = $(".about4_main ul li:first-child").height()/2;<!--第一个li高度的一半-->
+	var h1 = $(".about4_main ul li:last-child").height()/2;<!--最后一个li高度的一半-->
+	$(".line").css("top",h);
+	$(".line").height($(".about4_main").height()-h1-h);
+});
+</script>
+	
+<div class="about4">
+	<div class="about4_ch">成长经历</div>
+	<div class="about4_main">
+
+		<div class="line"></div>
+		<ul>
+			<li>
+				2007年走进大学的校园，校园环境优美，坐落于广州市番禺区沙湾镇。
+			</li>
+			<li>
+				2007-2010年，我在学校学习，直到大学毕业，大学期间，积极参加兼职和学校里的社团活动。
+			</li>
+			<li>
+				2010年5月31日是我人生的七点，我有了自己第一份正式的工作，从此开始在互联网的浪潮中艰难生存。
+			</li>
+			<li>
+				2010.5-2012.4,我在第一家公司（广州慧通计算机有限公司，后来被金蝶收购后改名为：金蝶医疗卫生科技有限公司）工作，历时差不多两年，主要负责门诊医疗信息系统的测试以及二次开发工作。
+			</li>
+			<li>
+				2012.4-2014.5第一家公司前称是：广州慧通计算机有限公司，后来被金蝶收购后改名为：金蝶医疗卫生科技有限公司。
+			</li>
+			<li>
+				第一家公司前称是：广州慧通计算机有限公司，后来被金蝶收购后改名为：金蝶医疗卫生科技有限公司。
+			</li>
+			<li>
+			    未完待续.....
+		
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+
+</div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+.transition(@options){
+  transition: @options;
+  -webkit-transition: @options;
+  -moz-transition: @options;
+  -o-transition: @options;
+  -ms-transition: @options;
+}
+.transform(@options){
+  transform: @options;
+  -webkit-transform: @options;
+  -moz-transform: @options;
+  -o-transform: @options;
+  -ms-transform: @options;
+}
+.animation(@options){
+  animation: @options;
+  -webkit-animation: @options;
+  -moz-animation: @options;
+  -o-animation: @options;
+  -ms-animation: @options;
+}
+
+@keyframes fireworks {
+  0%{
+    opacity: 0;
+    transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fireworks {
+  0%{
+    opacity: 0;
+    -webkit-transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes fireworks {
+  0%{
+    opacity: 0;
+    -moz-transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    -moz-transform: scale(1);
+  }
+}
+
+@-o-keyframes fireworks {
+  0%{
+    opacity: 0;
+    -o-transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    -o-transform: scale(1);
+  }
+}
+
+@-ms-keyframes fireworks {
+  0%{
+    opacity: 0;
+    -ms-transform: scale(0);
+  }
+  100%{
+    opacity: 1;
+    -ms-transform: scale(1);
+  }
+}
+
+.goatyear{
+  position: fixed;
+  width: 520px;
+  height: 706px;
+  left: 50%;
+  top: 50%;
+  .transform(translate(-50%, -50%));
+  >div{
+    position: absolute;
+    &.title{
+      background-image: url("../images/title.png");
+      width: 241px;
+      height: 79px;
+      left: 51px;
+      top: 55px;
+      opacity: 0;
+      .transition(all 2s ease-in-out 0);
+      .transform(translateX(-100%));
+    }
+    &.text{
+      background-image: url("../images/text.png");
+      width: 93px;
+      height: 323px;
+      right: 51px;
+      top: 55px;
+      opacity: 0;
+      .transition(all 2s ease-in-out 0);
+      .transform(translateY(-100%));
+    }
+    &.year{
+      background-image: url("../images/year.png");
+      width: 97px;
+      height: 166px;
+      right: 51px;
+      bottom: 110px;
+      opacity: 0;
+      .transition(all 2s ease-in-out 0);
+      .transform(translateY(-100%));
+    }
+    &.bg{
+      background-image: url("../images/bg.png");
+      width: 300px;
+      height: 238px;
+      left: 51px;
+      bottom: 78px;
+      opacity: 0;
+      .transition(all 2s ease-in-out 0);
+    }
+    &.cloud{
+      background-image: url("../images/cloud.png");
+      width: 320px;
+      height: 143px;
+      left: 39px;
+      bottom: 266px;
+      opacity: 0;
+      .transition(all 2s ease-in-out 4s);
+      .transform(translateX(-20%));
+    }
+    &.goat{
+      background-image: url("../images/goat.png");
+      width: 315px;
+      height: 442px;
+      left: 0;
+      bottom: 128px;
+      opacity: 0;
+      .transition(all 2s ease-in-out 2s);
+      .transform(translateX(-100%));
+    }
+    &.fireworks{
+      background-image: url("../images/fireworks.png");
+      width: 150px;
+      height: 99px;
+      left: 240px;
+      top: 0;
+      opacity: 0;
+    }
+  }
+  
+  &.active{
+    >div{
+      &.title{
+        opacity: 1;
+        .transform(translateX(0));
+      }
+      &.text{
+        opacity: 1;
+        .transform(translateY(0));
+      }
+      &.year{
+        opacity: 1;
+        .transform(translateY(0));
+      }
+      &.bg{
+        opacity: 1;
+      }
+      &.cloud{
+        opacity: 1;
+        .transform(translateX(0));
+      }
+      &.goat{
+        opacity: 1;
+        .transform(translateX(0));
+      }
+      &.fireworks{
+        .animation(fireworks 2s ease-in-out 6s infinite);
+      }
+    }
+  }
+}
+
+
+
+

@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+
+* { margin: 0; padding: 0 }
+
+#photo {
+	width:1000px;
+	height:auto;
+	border:2px solid #ccc;
+	font-size:12px;
+	margin:0 auto;
+	background:black;
+}
+
+#photo dl.detail {
+	text-align:center;
+	margin:20px;
+}
+#photo dl.detail dt a {
+
+	color:#f60;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px;
+	text-decoration:none;
+	vertical-align:top;
+}
+
+#photo dl.detail img {
+
+	margin:0 auto;
+}
+
+
+#photo dl.detail dt span {
+	font-size:14px;
+	color:#666;
+	font-weight:bold;
+	vertical-align:top;
+	padding:10px;
+}
+#photo dl.detail dd {
+	padding:10px;
+	font-size:14px;
+	margin:0 auto;
+	color:white;
+}
+#photo dl.detail dd.name {
+	font-weight:bold;
+	color:white;
+}
+#photo p.line {
+	clear:both;
+	width:95%;
+	margin:0 auto;
+	height:10px;
+	border-bottom:1px dashed #333;
+}
+

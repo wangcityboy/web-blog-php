@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, th, td{margin:0;padding:0;font-family:Arial,"微软雅黑";}
+body{font-size:12px;color:#666;font-family:Arial,"微软雅黑";background:#fff;}
+fieldset, img{border:0;}  /*在ie6下面，只要给插入图片加了链接，就会出现小边框*/
+
+ol, ul{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:100%;}
+em{font-style:normal;}
+input, button, select, textarea{outline:none;} 
+textarea{resize:none;}
+a{color: #616161;text-decoration:none;text-decoration:none;}
+.clearfix:before,.clearfix:after{display:table;content:"";}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+body{background:url(../images/bg.png) left top repeat-y;}
+
+/************************************************************关于我们*/
+
+.about4{width:648px;margin:40px auto 0 auto;}
+.about4_ch{font-size:18px;color:#d80017;margin-bottom:30px;}
+.about4_main{position:relative;padding-left:20px;overflow:hidden;}
+.line{width:1px;height:100%;background-color:#999;position:absolute;left:26px;z-index:-1;}
+.about4_main ul li{padding-left:25px;font-size:14px;color:#333333;line-height:30px;margin-bottom:30px;background:url(../images/about4_icon.png) left center no-repeat;}
+.about4_main ul li:last-child{margin-bottom:0px;}

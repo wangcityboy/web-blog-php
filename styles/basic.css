@@ -1,0 +1,124 @@
+ @CHARSET "UTF-8";
+
+body { 
+	font-size: 12px; 
+	background: #3D5E26 url(../images/bg-girl.jpg) center 0 scroll no-repeat; 
+}
+
+
+
+
+img { border: 0; display: block }
+ul { list-style: none; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+a { outline: none; }
+a:link, a:visited { text-decoration: none; color: #666 }
+a:hover { text-decoration: none; }
+.clear { clear: both; }
+.blank { height: 5px; overflow: hidden; width: 100%; margin: auto; clear: both }
+
+
+
+
+
+
+#page_num {
+	height:20px;
+	clear:both;
+	padding:20px 0;
+	position:relative;
+	font-size:12px;
+}
+#page_num ul {
+	position:absolute;
+	right:30px;
+	height:20px;
+}
+#page_num ul li {
+	float:left;
+	width:26px;
+	height:20px;
+}
+#page_num ul li a {
+	display:block;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	border:1px solid #333;
+	text-align:center;
+	text-decoration:none;
+}
+#page_num ul li a:hover,#page_num ul li a.selected {
+	background:#666;
+	font-weight:bold;
+	color:#fff;
+}
+#page_text {
+	height:20px;
+	clear:both;
+	padding:20px 0;
+	font-size:12px;
+}
+#page_text ul {
+	text-align:center;
+}
+#page_text ul li {
+	display:inline;
+}
+#page_text ul li a {
+	color:#333;
+}
+
+
+#member {
+	width:800px;
+	height:550px;
+	margin:1% 0 0 18%;
+	border:1px solid #ccc;
+	font-size:12px;
+}
+#member  h2 {
+	text-indent:0;
+	text-align:center;
+	height:30px;
+	line-height:30px;
+}
+#member #member_sidebar {
+	width:300px;
+	height:520px;
+	float:left;
+}
+#member #member_sidebar dl {
+	width:300px;
+	text-indent:0;
+	text-align:center;
+}
+#member #member_sidebar dl dt {
+	height:40px;
+	line-height:40px;
+	background:#999;
+	font-weight:bold;
+	text-align:center;
+	color:#fff;
+}
+#member #member_sidebar dl dd {
+	height:40px;
+	line-height:40px;
+	background:#eee;
+	font-weight:bold;
+	text-align:center;
+}
+#member #member_sidebar dl dd a {
+	display:block;
+	color:#333;
+	text-decoration:none;
+}
+#member #member_sidebar dl dd a:hover {
+	background:#ccc;
+}
+#member #member_main {
+	width:480px;
+	height:520px;
+	float:right;
+}
+

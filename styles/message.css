@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+* { margin: 0; padding: 0 }
+
+
+
+#msg{
+	color:red;
+	width:1000px;
+	margin:0 auto;
+}
+
+
+#ds-thread #ds-reset .ds-comment-body p {color:green;}
+
+#ds-thread #ds-reset .ds-highlight{color: green !important;} 
+
+#ds-thread #ds-reset a.ds-like-thread-button span {
+     color:blue;
+ }

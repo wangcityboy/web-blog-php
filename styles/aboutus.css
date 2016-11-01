@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+/* CSS Document */
+* { margin: 0; padding: 0 }
+ 
+
+/* book */
+.main_content { background: url(../images/bg2.jpg) top no-repeat; width: 1000px; margin:0 auto; overflow: hidden }
+.logo { text-align: center; color: #30736a; margin-bottom: 20px }
+.logo h1 { font-family: 'Parisienne', cursive; font-size: 54px; padding: 80px 0 0 0; font-weight: normal }
+.book { height: 398px; background: url(../images/open_book.jpg) no-repeat center; overflow: hidden }
+.book section h2 { color: #be22ad; font-family: 'Parisienne', cursive; font-size: 24px; margin-bottom: 10px }
+.welcome_text { width: 320px; color: #917147; margin: 0 0 0 40px; padding: 100px 0 0 0; float: left }
+.welcome_text p { margin-bottom: 10px }
+.more, .more_page { float: right; line-height: 30px; padding: 0 0 0 15px; height: 34px; clear: both }
+.more { color: #917147; background: url(../images/book_more.gif) no-repeat; }
+.more_page { background: url(../images/page_more.png) no-repeat; color: #704d20; }
+.coin-slider { overflow: hidden; width: 506px; height: 342px; background: url(../images/photo_frame.png) no-repeat center top; padding: 18px 0 0 54px; float: right; }
+.cs-buttons, .cs-title { display: none; }
+.cs-prev, .cs-next { background: #000000; color: #FFFFFF; padding: 0px 10px; }

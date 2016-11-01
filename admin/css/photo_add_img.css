@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+*{
+ 	margin: 0; 
+ 	padding: 0 
+}
+
+
+#form {
+	width:500px;
+	height:300px;
+	position:absolute;
+	left:50%;    
+	top:50%;    
+	margin-left:-150px;
+	margin-top:-250px;
+}
+
+#member_main h2 {
+	text-indent:0;
+	text-align:center;
+}
+
+#member_main dl {
+	width:320px;
+	margin:20px auto;
+}
+#photo dl dd {
+	padding:5px 0;
+	
+}
+#member_main dl dd input.text {
+	border:1px dashed #333;
+	background:#fff;
+	width:180px;
+	height:19px;
+}
+#member_main dl dd textarea {
+	border:1px dashed #333;
+	background:#fff;
+	width:180px;
+	height:70px;
+}
+
+#member_main dl dd input.submit {
+	border:1px dashed #333;
+	background:#fff;
+	width:60px;
+	height:19px;
+	cursor:pointer;
+	padding:0 0 2px 0;
+	margin:0 0 0 100px;
+}
+
+
+
+
+
+
+

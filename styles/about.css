@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+
+.about{
+	width:1000px;
+	margin:0 auto;
+	color:white;
+}
+
+
+.about .mydata h2{
+	text-align:center;
+	font: bold 16px "微软雅黑",Arial,Helvetica,sans-serif;
+	color: #444;
+	background: url("../images/h_line.jpg") repeat-x scroll 20px center transparent;
+}
+
+.about .mydata h2 p{
+	background: #fff; 
+	width: 70px;
+}
+
+.about .mydata h2 span{
+	color: #FE5187;
+}
+
+
+.about .mydata dl{
+	margin:10px 0 0 40px;
+}
+
+.about .mydata dl dt{
+	font-size: 15px;
+	line-height:30px;
+}
+
+.about .mydata dl dt label{
+	font-size: 15px;
+}
+
+
+.about .mydata dl dt label a{
+	color:white;
+}
+
+
+
+
+
+
+

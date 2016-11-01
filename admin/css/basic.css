@@ -1,0 +1,111 @@
+ @CHARSET "UTF-8";
+*{
+ 	margin: 0; 
+ 	padding: 0 
+}
+
+
+body { font-size: 12px; background: #ececec; color: #5d5d5d; }
+
+#page_num {
+	height:20px;
+	clear:both;
+	padding:20px 0;
+	position:relative;
+	font-size:12px;
+}
+#page_num ul {
+	position:absolute;
+	right:30px;
+	height:20px;
+}
+#page_num ul li {
+	float:left;
+	width:26px;
+	height:20px;
+	list-style-type:none;
+}
+#page_num ul li a {
+	display:block;
+	width:20px;
+	height:20px;
+	line-height:20px;
+	border:1px solid #333;
+	text-align:center;
+	text-decoration:none;
+}
+#page_num ul li a:hover,#page_num ul li a.selected {
+	background:#666;
+	font-weight:bold;
+	color:#fff;
+}
+#page_text {
+	height:20px;
+	clear:both;
+	padding:20px 0;
+	font-size:12px;
+}
+#page_text ul {
+	text-align:center;
+}
+#page_text ul li {
+	display:inline;
+}
+#page_text ul li a {
+	color:#333;
+}
+
+#member {
+	width:1200px;
+	height:1000px;
+	margin:0 auto;
+	border:1px solid #ccc;
+	font-size:12px;
+}
+#member  h2 {
+	text-indent:0;
+	text-align:center;
+	height:30px;
+	line-height:30px;
+}
+#member #member_sidebar {
+	width:200px;
+	height:750px;
+	float:left;
+	background:#999d9c;
+}
+#member #member_sidebar dl {
+	width:200px;
+	text-indent:0;
+	text-align:center;
+}
+#member #member_sidebar dl dt {
+	height:40px;
+	line-height:40px;
+	background:#999;
+	font-weight:bold;
+	text-align:center;
+	color:#fff;
+}
+#member #member_sidebar dl dd {
+	height:40px;
+	line-height:40px;
+	background:#eee;
+	font-weight:bold;
+	text-align:center;
+}
+#member #member_sidebar dl dd a {
+	display:block;
+	color:#333;
+	text-decoration:none;
+}
+#member #member_sidebar dl dd a:hover {
+	background:#ccc;
+}
+
+#member #member_main {
+	width:980px;
+	height:1000px;
+	float:right;
+}
+

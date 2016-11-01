@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+
+
+* { margin: 0; padding: 0 }
+
+
+#article {
+	width:985px;
+	margin:0 auto;
+	min-height:800px;
+	font-size:12px;
+	position:relative;
+	background:white; 
+	border:#FFF 10px solid;
+}
+
+#article h1 {
+	text-indent:0;
+	text-align:center;
+	font-size:25px;
+	color:#FE5187;
+	
+}
+#article img.nice {
+	position:absolute;
+	top:-30px;
+	left:580px;
+}
+#article img.hot {
+	position:absolute;
+	top:-30px;
+	left:680px;
+}
+
+
+#article div.content {
+	margin:0 auto;
+	width:985px;
+	padding:10px 20px 0 0;
+}
+
+	
+
+#article div.content .user {
+	
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+
+#article div.content .user span {
+	color:#06f;
+	text-align:center;
+	font-size:20px;
+}
+#article div.content h3 {
+	font-size:14px;
+	height:40px;
+	line-height:40px;
+}
+#article div.content h3 span {
+	font-size:12px;
+	font-weight:normal;
+	color:#06f;
+}
+#article div.content h3 span a {
+	text-decoration:none;
+	color:#06f;
+}
+#article div.content h3 span a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+#article div.content h3 img {
+	position:relative;
+	top:2px;
+}
+#article div.content .detail {
+	line-height:200%;
+	font-size:14px;
+	background:white;
+}
+#article div.content .detail a {
+	text-decoration:none;
+	color:blue;
+}
+#article div.content .detail a:hover {
+	color:#f60;
+	text-decoration:underline;
+}
+#article div.content .detail p.autograph {
+	color:#666;
+	border-bottom:1px dashed #666;
+	margin:5px 0;
+	width:80%;
+	padding:5px 0;
+}
+
+
+#article  div.ds-thread{
+	width:80%;
+	margin:0 auto;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+#post {
+	width:80%;
+	margin:0 auto;
+	font-size:12px;
+	background:#ececec;
+}
+
+#post dl {
+	margin:0 auto;
+}
+
+#post dl dt {
+	text-align:center;
+	font-weight:bold;
+	font-size:23px;
+}
+
+#post dl dd {
+	padding:5px 0;
+}
+
+#post dl dd textarea {
+	width:400px;
+	border-top:none;
+	background:#fff;
+	padding:5px;
+}
+#post dl dd input.text {
+	width:250px;
+	height:19px;
+	background:#fff;
+}
+#select{
+	width:120px;
+	height:20px;
+}
+#url1{
+	width:250px;
+	height:20px;
+}
+
+
+#post dl input.submit {
+	
+	
+	border:1px dashed #333;
+	background:#fff;
+	cursor:pointer;
+	color:#333;
+	
+}
+
+
+#post dl  input.submit:hover {
+	background:#eee;
+}

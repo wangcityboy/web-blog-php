@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+
+
+
+
+
+#member_main h2 {
+	text-indent:0;
+	text-align:center;
+}
+#member_main p {
+	text-align:center;
+	padding:20px;
+	clear:both;
+}
+#member_main p a {
+	font-size:14px;
+	color:#333;
+}
+
+
+#member_main dl {
+	text-align:center;
+	display:block;
+	margin-top:26px;
+	margin-left:56px;
+	float:left;
+}
+
+#member_main dl dt img {
+	border:5px;
+	text-align:center;
+}
+
+#member_main dl dd {
+	text-align:center;
+	color:red;
+}
+
+#member_main dl dd p a {
+	clear:both;
+	text-align:center;
+	text-decoration:none;
+}
+
+#member_main dl dd p a:hover {
+	color:red;
+}
+
+
+
+

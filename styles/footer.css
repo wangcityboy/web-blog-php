@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+/*footer*/
+footer { 
+	background: #339999;
+	width: 100%;
+	clear: both;
+	text-align: center;
+}
+.ft-copyright { 
+	color: #fff; 
+	line-height: 24px;
+}
+.ft-list { 
+	background: url(../images/ft-wx-s.png) no-repeat right; 
+	height: 100px
+}

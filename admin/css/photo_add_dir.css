@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+
+#member_main h2 {
+	text-indent:0;
+	text-align:center;
+}
+#member_main p {
+	text-align:center;
+	padding:20px;
+}
+#member_main p a {
+	font-size:14px;
+	color:#333;
+}
+#member_main dl {
+	width:380px;
+	margin:20px auto;
+}
+#member_main dl dd {
+	padding:5px 0;
+}
+#member_main dl dd input.text {
+	border:1px dashed #333;
+	background:#fff;
+	width:180px;
+	height:19px;
+}
+#member_main dl dd textarea {
+	border:1px dashed #333;
+	background:#fff;
+	width:180px;
+	height:70px;
+}
+#member_main dl dd#pass {
+	display:none;
+}
+#member_main dl dd input.submit {
+	border:1px dashed #333;
+	background:#fff;
+	width:60px;
+	height:19px;
+	cursor:pointer;
+	padding:0 0 2px 0;
+	margin:10% 10% 10% 10%;
+}
+
+
+
+
+
+
+

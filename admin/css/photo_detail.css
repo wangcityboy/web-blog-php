@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+
+#member_main h2 {
+	text-indent:0;
+	text-align:center;
+}
+#member_main dl.detail {
+	text-align:center;
+	margin:20px;
+}
+#member_main dl.detail dt a {
+	color:#f60;
+	font-size:14px;
+	font-weight:bold;
+	padding:10px;
+	text-decoration:none;
+	vertical-align:top;
+}
+
+#member_main dl.detail img {
+	 margin:0 auto;
+}
+
+#member_main dl.detail dt span {
+	font-size:14px;
+	font-weight:bold;
+	vertical-align:top;
+	padding:10px;
+}
+
+#member_main dl dd {
+	padding:10px;
+	font-size:14px;
+	margin:0 auto;
+}
+
+#member_main dl.detail dd.name {
+	font-weight:bold;
+	color:blue;
+}
+
+#member_main p.line {
+	clear:both;
+	width:95%;
+	margin:0 auto;
+	height:10px;
+	border-bottom:1px dashed #333;
+}

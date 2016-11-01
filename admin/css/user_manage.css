@@ -1,0 +1,74 @@
+@CHARSET "UTF-8";
+
+#member {
+	width:1000px;
+	height:750px;
+	margin:0 auto;
+	border:1px solid #ccc;
+	font-size:12px;
+}
+#member  h2 {
+	text-indent:0;
+	text-align:center;
+	height:30px;
+	line-height:30px;
+}
+#member #member_sidebar {
+	width:200px;
+	height:750px;
+	float:left;
+}
+#member #member_sidebar dl {
+	width:200px;
+	text-indent:0;
+	text-align:center;
+}
+#member #member_sidebar dl dt {
+	height:40px;
+	line-height:40px;
+	background:#999;
+	font-weight:bold;
+	text-align:center;
+	color:#fff;
+}
+#member #member_sidebar dl dd {
+	height:40px;
+	line-height:40px;
+	background:#eee;
+	font-weight:bold;
+	text-align:center;
+}
+#member #member_sidebar dl dd a {
+	display:block;
+	color:#333;
+	text-decoration:none;
+}
+#member #member_sidebar dl dd a:hover {
+	background:#ccc;
+}
+#member #member_main {
+	width:800px;
+	height:750px;
+	float:right;
+}
+
+
+#member #member_main table {
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+	background:#ccc;
+	margin-bottom:0px;
+}
+#member #member_main table th,#member #member_main table td {
+	height:25px;
+	line-height:25px;
+	background:#fff;
+}
+#member #member_main table td a {
+	text-decoration:none;
+	color:#333;
+}
+#member #member_main table td a:hover {
+	text-decoration:underline;
+}

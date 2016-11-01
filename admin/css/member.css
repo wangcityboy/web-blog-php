@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+
+
+#member{
+	background:#ececec;
+	
+}
+
+#member #member_main dl {
+	width:780px;
+	margin:0 auto;
+	font-size:14px;
+	
+	
+}
+#member #member_main dl dd {
+	padding:10px 0;
+	border-bottom:1px dashed #999;
+}
