@@ -32,10 +32,6 @@ define('DB_USER','root');
 define('DB_PWD','root');
 define('DB_NAME','testGuest');
 
-// define('DB_HOST','hdm14969059.my3w.com');
-// define('DB_USER','hdm14969059');
-// define('DB_PWD','whf324512');
-// define('DB_NAME','hdm14969059_db');
 
 //初始化数据库
 _connect();   //连接MYSQL数据库
@@ -98,12 +94,5 @@ if (!!$_rows = _fetch_array("SELECT
 } else {
 	exit('系统表异常，请管理员检查！');
 }
-
-
-
-
-
-
-
 
 ?>
