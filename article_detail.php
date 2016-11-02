@@ -87,6 +87,7 @@ if (isset($_GET['id'])) {
 
 
 <div id="article">
+
 	<div id="subject">
 		<div class="content">
 		<h1><?php echo $_html['title']?></h1>
@@ -98,9 +99,6 @@ if (isset($_GET['id'])) {
 			</div>
 		</div>
 	</div>
-	
-	
-
 
 	<!-- 多说评论框 start -->
 	<div class="ds-thread" data-thread-key="<?php echo $_GET['id']?>" data-title="<?php echo $ad_title;?>" data-url="article.php?id=<?php echo $_GET['id'] ?>"></div>
