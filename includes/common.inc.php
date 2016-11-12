@@ -27,10 +27,10 @@ define('START_TIME',_runtime());
 //$GLOBALS['start_time'] = _runtime();
 
 //数据库连接
-define('DB_HOST','127.0.0.1:3307');
+define('DB_HOST','127.0.0.1:3306');
 define('DB_USER','root');
-define('DB_PWD','root');
-define('DB_NAME','testGuest');
+define('DB_PWD','KeYpZrZx');
+define('DB_NAME','guest');
 
 
 //初始化数据库
