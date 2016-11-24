@@ -87,7 +87,7 @@ $_result = _query("SELECT
 <script type="text/javascript" src="js/blocksit.min.js"></script>
 <script type="text/javascript" src="js/pubu.js"></script>
 
-<link rel="stylesheet" href="styles/1/pubu.css" type="text/css" media='screen'/>
+<link rel="stylesheet" href="styles/pubu.css" type="text/css" media='screen'/>
 
 </head>
 <body>
