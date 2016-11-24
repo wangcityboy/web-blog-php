@@ -132,7 +132,7 @@ if ($_GET['action'] == 'post') {
 				<option value="10009">前端开发</option>
 				<option value="10010">后台开发</option>
 				<option value="10011">测试开发</option>						
-				<option value="10012">IT技术</option>		
+				<option value="10012">信息技术</option>		
 				<option value="10013">生活随笔</option>
 				<option value="10014">网络文摘</option>
 			</select>

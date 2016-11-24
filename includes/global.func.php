@@ -3,21 +3,21 @@
 
 function  _getClassify($_classify){
 	$_str = null;
-	if($_classify == 1){
+	if($_classify == 10007){
 		$_str = "iOS开发";
-	}else if($_classify == 2){
+	}else if($_classify == 10008){
 		$_str = "安卓开发";
-	}else if($_classify == 3){
-		$_str = "后台开发";
-	}else if($_classify == 4){
+	}else if($_classify == 10009){
 		$_str = "前端开发";
-	}else if($_classify == 5){
+	}else if($_classify == 10010){
+		$_str = "后台开发";
+	}else if($_classify == 10011){
 		$_str = "测试开发";
-	}else if($_classify == 6){
-		$_str = "IT技术";
-	}else if($_classify == 7){
+	}else if($_classify == 10012){
+		$_str = "信息技术";
+	}else if($_classify == 10013){
 		$_str = "生活随笔";
-	}else if($_classify == 8){
+	}else if($_classify == 10014){
 		$_str = "网络文摘";
 	}
 	return $_str;
