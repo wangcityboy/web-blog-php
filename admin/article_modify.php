@@ -171,14 +171,14 @@ if (isset($_GET['id'])) {
 				<dd>
 					日志分类： 
 					<select name="classify" id="select">
-						<option value="1">iOS开发</option>
-						<option value="2">安卓开发</option>
-						<option value="3">后台开发</option>
-						<option value="4">前端开发</option>
-						<option value="5">测试开发</option>						
-						<option value="6">IT技术</option>		
-						<option value="7">生活随笔</option>
-						<option value="8">网络文摘</option>
+						<option value="10007">iOS开发</option>
+						<option value="10008">安卓开发</option>
+						<option value="10009">前端开发</option>
+						<option value="10010">后台开发</option>
+						<option value="10011">测试开发</option>						
+						<option value="10012">信息技术</option>		
+						<option value="10013">生活随笔</option>
+						<option value="10014">网络文摘</option>
 					</select>
 				
      
