@@ -97,8 +97,6 @@ window.onload = function () {
 			fm.code.focus(); //将焦点以至表单字段
 			return false;
 		}
-		
-		
 		return true;
 	};
 };
