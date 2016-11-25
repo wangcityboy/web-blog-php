@@ -12,11 +12,6 @@
 }
 
 
-.bwBeautifulCons .titleTopBlock {
-    width: 705px;
-    height: 42px;
-    line-height: normal;
-    padding: 18px 0 0 18px; }
     
 .photo .bw_bc_title {
       font-size: 30px;
@@ -28,7 +23,8 @@
 .photo .titleTopBlock {
       width: auto;
       height: 32px;
-      padding: 37px 0px 55px 0px;
+      padding: 37px 0px 15px 0px;
+	  font-size:14px;
 }
 	
 .photo .titleTopBlock .leftBlock {
@@ -42,30 +38,6 @@
         background: url("../images/bw_tag_icon2.jpg") no-repeat left center;
 }
  	
-.photo .changePhotoBlockS {
-      width: 845px;
-}
-	
-.photo .changePhotoBlockS .leftBtns {
-        width: 60px;
-        height: 60px;
-        left: 0px;
-}
-
-.photo .changePhotoBlockS .leftBtns:hover {
-          background-position: 0px -60px;
-}
-
-.photo .changePhotoBlockS .rightBtns {
-        width: 60px;
-        height: 60px;
-        right: 0px;
-        background-position: 0px -120px;
-}
-
-.photo .changePhotoBlockS .rightBtns:hover {
-          background-position: 0px -180px;
-}
       	
       	
       	
@@ -81,7 +53,27 @@
     position: relative;
     overflow: hidden;
 }
-      	
+
+.photo .changePhotoBlock {
+    width: 1000px;
+    height: auto;
+    clear: both;
+    zoom: 1;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+	
+.photo .changePhotoBlock li {
+      height: 1000px;
+      display: block;
+}
+    
+.photo .changePhotoBlock img {
+      max-width: 1000px;
+      max-height: auto;
+}
 
     
 .photo .changePhotoBlock td a {
@@ -129,26 +121,7 @@
         background: url("../images/bw_leftBbtns.png") no-repeat 0 -180px;
 }
 
-.photo .changePhotoBlock {
-    width: 1000px;
-    height: auto;
-    clear: both;
-    zoom: 1;
-    overflow: hidden;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-}
-	
-.photo .changePhotoBlock li {
-      height: 1000px;
-      display: block;
-}
-    
-.photo .changePhotoBlock img {
-      max-width: 1000px;
-      max-height: auto;
-}
+
 
   	
  
