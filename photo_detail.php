@@ -75,7 +75,7 @@ if (isset($_GET['id'])) {
 		");
 		
 		if (!empty($_html['preid']['id'])) {
-			$_html['pre'] = '<a class="left" href="photo_detail.php?id='.$_html['preid']['id'].'#pre">上一页</a>';
+			$_html['pre'] = '<a class="left" href="photo_detail.php?id='.$_html['preid']['id'].'#pre"> </a>';
 		} else {
 			$_html['pre'] = '<span>到头了</span>';
 		}
@@ -96,7 +96,7 @@ if (isset($_GET['id'])) {
 		");
 		
 		if (!empty($_html['nextid']['id'])) {
-			$_html['next'] = '<a class="right" href="photo_detail.php?id='.$_html['nextid']['id'].'#next">下一页</a>';
+			$_html['next'] = '<a class="right" href="photo_detail.php?id='.$_html['nextid']['id'].'#next"> </a>';
 		} else {
 			$_html['next'] = '<span>到底了</span>';
 		}
