@@ -77,7 +77,7 @@ if (isset($_GET['id'])) {
 		if (!empty($_html['preid']['id'])) {
 			$_html['pre'] = '<a class="left" href="photo_detail.php?id='.$_html['preid']['id'].'#pre"> </a>';
 		} else {
-			$_html['pre'] = '<span>到头了</span>';
+			$_html['pre'] = '<span></span>';
 		}
 		
 		//下一页，取得比自己小的ID中，最大的那个即可。
@@ -98,7 +98,7 @@ if (isset($_GET['id'])) {
 		if (!empty($_html['nextid']['id'])) {
 			$_html['next'] = '<a class="right" href="photo_detail.php?id='.$_html['nextid']['id'].'#next"> </a>';
 		} else {
-			$_html['next'] = '<span>到底了</span>';
+			$_html['next'] = '<span></span>';
 		}
 		
 	} else {

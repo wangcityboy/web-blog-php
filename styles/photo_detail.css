@@ -30,8 +30,8 @@
 .photo .titleTopBlock .leftBlock {
         float: left;
 		display: block;
-        padding-left: 50px;
-	    background: url("../images/icon15.gif") no-repeat left;
+        padding-left: 15px;
+	    background: url("../images/icon15.gif") no-repeat right center;
 }
 	
 .photo .titleTopBlock .rightBlock {
