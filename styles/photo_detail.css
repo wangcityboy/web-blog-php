@@ -4,7 +4,7 @@
 
 .photo {
 	width: 1000px;
-	height: auto;
+	height: 870px;
 	margin:0 auto; 
 	border:2px solid #ccc;
     line-height: normal;
@@ -21,7 +21,7 @@
 }
 
 .photo .titleTopBlock {
-      width: auto;
+      width: 1000px;
       height: 32px;
       padding: 27px 0px 15px 15px;
 	  font-size:15px;
@@ -41,12 +41,10 @@
 }
  	
       	
-      	
-      	
 
 .photo .changePhotoBlockS {
-    width: 1000px;
-    height: auto;
+    width: 890px;
+    height: 870px;
     padding: 20px 0 20px 0;
     clear: both;
     zoom: 1;
@@ -57,8 +55,8 @@
 }
 
 .photo .changePhotoBlock {
-    width: 1000px;
-    height: auto;
+    width: 890px;
+    height: 870px;
     clear: both;
     zoom: 1;
     overflow: hidden;
@@ -68,13 +66,13 @@
 }
 	
 .photo .changePhotoBlock li {
-      height: 1000px;
+      height: 890px;
       display: block;
 }
     
 .photo .changePhotoBlock img {
-      max-width: 1000px;
-      max-height: auto;
+      max-width: 890px;
+      max-height: 870px;
 }
 
     
