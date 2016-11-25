@@ -3,12 +3,17 @@
 * { margin: 0; padding: 0 }
 
 .photo {
-	width:1000px;
+	/* width:1000px;
 	height:auto;
 	border:2px solid #ccc;
 	font-size:12px;
 	margin:0 auto;
-	background:white;
+	background:white; */
+	
+	width: 1000px;
+  height: auto;
+  line-height: normal;
+  background: #f7f7f7;
 }
 
 .photo .changePhotoBlockS {
@@ -22,7 +27,7 @@
     position: relative;
     overflow: hidden; }
 	
-.photo .changePhotoBlockS .leftBtns {
+/* .photo .changePhotoBlockS .leftBtns {
       width: 68px;
       height: 64px;
       line-height: normal;
@@ -48,7 +53,7 @@
       z-index: 999; }
     	
 .photo .changePhotoBlockS .rightBtns:hover {
-        background: url("../images/bw_leftBbtns.png") no-repeat 0 -192px; }
+        background: url("../images/bw_leftBbtns.png") no-repeat 0 -192px; } */
       	
 
     
