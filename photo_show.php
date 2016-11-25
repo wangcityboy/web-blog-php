@@ -69,8 +69,6 @@ $_result = _query("SELECT
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-
 <?php 
 	require ROOT_PATH.'includes/title.inc.php';
 ?>
@@ -78,15 +76,6 @@ $_result = _query("SELECT
 <?php 
 	require ROOT_PATH.'includes/header.inc.php';
 ?>
-
-
-<!-- <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script> -->
-<!-- <script type="text/javascript" src="js/notification.js"></script> -->
-<!-- <script type="text/javascript" src="js/bigimg.js"></script> -->
-<!-- <script type="text/javascript" src="js/jquery.lazyload.min.js" ></script> -->
-<!-- <script type="text/javascript" src="js/blocksit.min.js"></script> -->
-<!-- <script type="text/javascript" src="js/pubu.js"></script> -->
-
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/notification.js"></script>
 <script type="text/javascript" src="js/jquery.lazyload.min.js" ></script>
