@@ -128,7 +128,7 @@ if (isset($_GET['id'])) {
 		<h1 class="bw_bc_title"><?php echo $_html['name']?></h1>
                       <div class="titleTopBlock">
                      		 <span class="leftBlock">
-                                发表于：<?php echo $_html['date']?> 上传者：<?php echo $_html['username']?>
+                                发表于：<?php echo $_html['date']?> | 上传者：<?php echo $_html['username']?>
                             </span>
                             <span class="rightBlock">
                             	浏览量(<strong><?php echo $_html['readcount'];?></strong>) | 评论量(<strong><?php echo $_html['commendcount'];?></strong>)
