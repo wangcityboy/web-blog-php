@@ -11,13 +11,14 @@
 	background:white; */
 	
 	width: 1000px;
-  height: auto;
-  line-height: normal;
-  background: #f7f7f7;
+	margin:0 auto;
+    height: auto;
+    line-height: normal;
+    background: #f7f7f7;
 }
 
 .photo .changePhotoBlockS {
-    width: 690px;
+    width: 1000px;
     height: 670px;
     padding: 20px 0 20px 0;
     clear: both;
@@ -105,7 +106,7 @@
 
 
 .photo .changePhotoBlock {
-    width: 690px;
+    width: 1000px;
     height: 670px;
     clear: both;
     zoom: 1;
@@ -115,15 +116,15 @@
     overflow: hidden; }
 	
 .photo .changePhotoBlock li {
-      height: 670px;
+      height: 1000px;
       display: block; }
     
 .photo .changePhotoBlock .changePhotoBlockS {
-      width: 690px;
+      width: 1000px;
       height: 670px; }
 	
 .photo .changePhotoBlock img {
-      max-width: 690px;
+      max-width: 1000px;
       max-height: 670px; }
 
   	
