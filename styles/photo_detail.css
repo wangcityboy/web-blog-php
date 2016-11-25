@@ -40,10 +40,7 @@
         padding-right: 50px;    
 }
  	
-      	
-      	
-      	
-
+         
 .photo .changePhotoBlockS {
     width: 1000px;
     height: auto;
@@ -87,7 +84,7 @@
       top: 313px;
 	  vertical-align:center;
       cursor: pointer;
-      background: url("../images/bw_leftBbtns.png") no-repeat 0 -120px;
+      background: url("../images/photo_leftBbtns.png") no-repeat 0 -120px;
       z-index: 999;
 }
 
@@ -99,12 +96,12 @@
       left: -6px;
       top: 313px;
       cursor: pointer;
-      background: url("../images/bw_leftBbtns.png") no-repeat 0 0;
+      background: url("../images/photo_leftBbtns.png") no-repeat 0 0;
       z-index: 999;
 }
 
 .photo .changePhotoBlock td a.left:hover {
-        background: url("../images/bw_leftBbtns.png") no-repeat 0 -60px;
+        background: url("../images/photo_leftBbtns.png") no-repeat 0 -60px;
 }
 
 .photo .changePhotoBlock td a.right {
@@ -115,12 +112,12 @@
       right: -7px;
       top: 313px;
       cursor: pointer;
-      background: url("../images/bw_leftBbtns.png") no-repeat 0 -120px;
+      background: url("../images/photo_leftBbtns.png") no-repeat 0 -120px;
       z-index: 999;
 }
 
 .photo .changePhotoBlock td a.right:hover {
-        background: url("../images/bw_leftBbtns.png") no-repeat 0 -180px;
+        background: url("../images/photo_leftBbtns.png") no-repeat 0 -180px;
 }
 
 

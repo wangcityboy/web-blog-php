@@ -1,16 +1,75 @@
 @CHARSET "UTF-8";
-header { width: 100%; margin: 0 auto; border-bottom: #3c7a48 1px solid }
-.wraper{ width:1000px; padding-top:100px; margin:0 auto}
-.quotes { width: 1000px; position: relative; margin: 80px auto 80px 10px;}
-.quotes p { text-shadow: #3D5E26 1px 1px 1px; color: #fff; width: 330px; line-height: 26px; }
-.text5 { position: absolute; left: 0px; top: 140px; font-family: "微软雅黑"; font-size: 30px; color: #FFF; -webkit-box-reflect: below -3px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), to(white)); } / */ below文字倒影方向向下，距离3px 颜色渐变由上往下 */
-.flower { position: absolute; right: 0; top: 60px; background: url(../images/flower.png) no-repeat; width: 173px; height: 175px; z-index: 2 }
-.flower img { margin: 22px 0 0 17px; display: block; }
-.menu { width: 100%;line-height: 50px; height: 50px; font-family: "微软雅黑"; font-size: 16px; background:#339999; text-align: center; position: relative; border-bottom: #559765 1px solid; }
-.menu ul { width: 1000px; margin: auto;  overflow: hidden }
-.menu ul li{float:left;overflow:hidden;position:relative;line-height:48px;text-align:center;}
-.menu ul li a{position:relative;display:block;color:#fff;width:111px;height:48px;font-family:"微软雅黑", "宋体";font-size:14px;text-decoration:none;cursor:pointer;font-weight:bold;line-height:48px;}
-.menu ul li a span{position:absolute;left:0;width:111px;}
-.menu ul li a span.out{top:0px;}
-.menu ul li a span.over,  .menu ul li a span.bg{top:-48px;}
-.menu ul li a span.over{color:#FFF;height:48px;width:111px;background-image:url(../images/menu_bg.jpg);background-repeat:repeat;}
+header { 
+	width: 100%; 
+	margin: 0 auto; 
+	border-bottom: #3c7a48 1px solid
+}
+
+.wraper{ 
+	width:1000px; 
+	padding-top:100px; 
+	margin:0 auto
+}
+.quotes { 
+	width: 1000px; 
+	position: relative; 
+	margin: 80px auto 80px 10px;
+}
+.quotes p { 
+	text-shadow: #3D5E26 1px 1px 1px; 
+	color: #fff; width: 330px; 
+	line-height: 26px;
+}
+
+/* .menu { 
+	width: 100%;
+	line-height: 50px; 
+	height: 50px; 
+	font-family: "微软雅黑"; 
+	font-size: 16px; 
+	background:#339999; 
+	text-align: center; 
+	position: relative; 
+	border-bottom: #559765 1px solid;
+}
+.menu ul { 
+	width: 1000px; 
+	margin: auto;  
+	overflow: hidden
+}
+.menu ul li{
+	float:left;
+	overflow:hidden;
+	position:relative;
+	line-height:48px;
+	text-align:center;
+}
+.menu ul li a{
+	position:relative;
+	display:block;
+	color:#fff;
+	width:111px;height:48px;
+	font-family:"微软雅黑", "宋体";
+	font-size:14px;
+	text-decoration:none;
+	cursor:pointer;
+	font-weight:bold;
+	line-height:48px;
+}
+.menu ul li a span{
+	position:absolute;
+	left:0;
+	width:111px;
+}
+.menu ul li a span.out{
+	top:0px;
+}
+.menu ul li a span.over,  .menu ul li a span.bg{
+	top:-48px;
+}
+.menu ul li a span.over{
+	color:#FFF;
+	height:48px;
+	width:111px;
+	background-image:url(../images/menu_bg2.jpg);background-repeat:repeat;
+} */
