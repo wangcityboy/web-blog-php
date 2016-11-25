@@ -3,19 +3,41 @@
 * { margin: 0; padding: 0 }
 
 .photo {
-	/* width:1000px;
-	height:auto;
-	border:2px solid #ccc;
-	font-size:12px;
-	margin:0 auto;
-	background:white; */
-	
 	width: 1000px;
-	margin:0 auto;
-    height: auto;
+	height: auto;
+	margin:0 auto; 
+	border:2px solid #ccc;
     line-height: normal;
     background: #f7f7f7;
 }
+
+
+.bwBeautifulCons .titleTopBlock {
+    width: 705px;
+    height: 42px;
+    line-height: normal;
+    padding: 18px 0 0 18px; }
+    
+.bwBeautifulCons .titleTopBlock .leftBlock {
+      float: left;
+      display: block; }
+
+.bwBeautifulCons .titleTopBlock .leftBlock {
+        width: 111px;
+        height: 32px;
+        line-height: normal;
+        display: block;
+        overflow: hidden;
+        margin-right: 15px;
+        font-size: 14px;
+        line-height: 32px;
+        float: left;
+        text-align: center;
+        text-indent: 20px; }
+        	
+      	
+      	
+      	
 
 .photo .changePhotoBlockS {
     width: 1000px;
@@ -26,7 +48,8 @@
     overflow: hidden;
     margin: 0 auto;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+}
       	
 
     
@@ -35,7 +58,7 @@
       height: 64px;
       line-height: normal;
       position: absolute;
-      right: -27px;
+      right: -7px;
       top: 313px;
 	  vertical-align:center;
       cursor: pointer;
@@ -75,8 +98,6 @@
         background: url("../images/bw_leftBbtns.png") no-repeat 0 -180px;
 }
 
-
-
 .photo .changePhotoBlock {
     width: 1000px;
     height: auto;
@@ -85,50 +106,19 @@
     overflow: hidden;
     margin: 0 auto;
     position: relative;
-    overflow: hidden; }
+    overflow: hidden;
+}
 	
 .photo .changePhotoBlock li {
       height: 1000px;
-      display: block; }
+      display: block;
+}
     
-.photo .changePhotoBlock .changePhotoBlockS {
-      width: 1000px;
-      height: 670px; }
-	
 .photo .changePhotoBlock img {
       max-width: 1000px;
-      max-height: auto; }
+      max-height: auto;
+}
 
   	
-  	
-
-
-
-/*
-.photo dl.detail dt span {
-	font-size:14px;
-	color:#666;
-	font-weight:bold;
-	vertical-align:top;
-	padding:10px;
-}
-
-
-.photo dl.detail dd {
-	padding:10px;
-	font-size:14px;
-	margin:0 auto;
-	color:white;
-}
-.photo dl.detail dd.name {
-	font-weight:bold;
-	color:white;
-}
-.photo p.line {
-	clear:both;
-	width:95%;
-	margin:0 auto;
-	height:10px;
-	border-bottom:1px dashed #333;
-} */
+ 
 

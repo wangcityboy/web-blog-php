@@ -125,20 +125,31 @@ if (isset($_GET['id'])) {
 <body>
 
 <div class="photo">
+		<h1 class="bw_bc_title"><?php echo $_html['name']?></h1>
+                      <div class="titleTopBlock">
+                            <span class="rightBlock">
+                                浏览量(<strong><?php echo $_html['readcount'];?></strong>) 评论量(<strong><?php echo $_html['commendcount'];?></strong>)
+                            </span>
+                            <span class="leftBlock">
+                                发表于：<?php echo $_html['date']?> 上传者：<?php echo $_html['username']?>
+                            </span>
+                      </div>
+
     	<div class="changePhotoBlockS">
     	<div class="leftBtns"><a name="pre"></a></div>
     	<div class="rightBtns"><a name="next"></a></div>
-    	<div class="changePhotoBlock" id="changePhotoBlock">
-    	<ul><li>
-    	<table cellpadding="0" cellspacing="0" border="0" width="100%">
-           <tr>
-                <td align="center" valign="middle">
-                    <?php echo $_html['pre']?><img src="<?php echo $_html['url']?>" width="670" /><?php echo $_html['next']?>
-                </td>
-            </tr>
-        </table>
-    	</li></ul>
-    	</div>
+	    	<div class="changePhotoBlock" id="changePhotoBlock">
+	    	<ul><li>
+	    	<table cellpadding="0" cellspacing="0" border="0" width="100%">
+	           <tr>
+	                <td align="center" valign="middle">
+	                    <?php echo $_html['pre']?><img src="<?php echo $_html['url']?>" width="670" /><?php echo $_html['next']?>
+	                </td>
+	            </tr>
+	        </table>
+	    	</li></ul>
+	    	</div>
+	    </div>
 </div>
 
 <?php 
