@@ -50,6 +50,55 @@
 .photo .changePhotoBlockS .rightBtns:hover {
         background: url("../images/bw_leftBbtns.png") no-repeat 0 -192px; }
       	
+
+    
+.photo .changePhotoBlock td a {
+	  width: 68px;
+      height: 64px;
+      line-height: normal;
+      position: absolute;
+      right: -27px;
+      top: 313px;
+	  vertical-align:center;
+      cursor: pointer;
+      background: url("../images/bw_leftBbtns.png") no-repeat 0 -120px;
+      z-index: 999;
+}
+
+.photo .changePhotoBlock td a.left{
+	  width: 68px;
+      height: 64px;
+      line-height: normal;
+      position: absolute;
+      left: -26px;
+      top: 313px;
+      cursor: pointer;
+      background: url("../images/bw_leftBbtns.png") no-repeat 0 0;
+      z-index: 999;
+}
+
+.photo .changePhotoBlock td a.left:hover {
+        background: url("../images/bw_leftBbtns.png") no-repeat 0 -60px;
+}
+
+.photo .changePhotoBlock td a.right {
+      width: 68px;
+      height: 64px;
+      line-height: normal;
+      position: absolute;
+      right: -27px;
+      top: 313px;
+      cursor: pointer;
+      background: url("../images/bw_leftBbtns.png") no-repeat 0 -120px;
+      z-index: 999;
+}
+
+.photo .changePhotoBlock td a.right:hover {
+        background: url("../images/bw_leftBbtns.png") no-repeat 0 -192px;
+}
+
+
+
 .photo .changePhotoBlock {
     width: 690px;
     height: 670px;
@@ -71,68 +120,13 @@
 .photo .changePhotoBlock img {
       max-width: 690px;
       max-height: 670px; }
-    	
 
-/* .photo dl.detail {
-	text-align:center;
-	margin:20px;
-} 
-*/
-.photo .changePhotoBlock td a {
-	  width: 68px;
-      height: 64px;
-      line-height: normal;
-      position: absolute;
-      right: 60px;
-      top: 613px;
-	  vertical-align:center;
-      cursor: pointer;
-      background: url("../images/bw_leftBbtns.png") no-repeat 0 -120px;
-      z-index: 999;
-}
+  	
+  	
 
-.photo .changePhotoBlock td a.left{
-	  width: 68px;
-      height: 64px;
-      line-height: normal;
-      position: absolute;
-      left: 130px;
-      top: 913px;
-	  vertical-align:center;
-      cursor: pointer;
-      background: url("../images/bw_leftBbtns.png") no-repeat 0 0;
-      z-index: 999;
-}
-
-.photo .changePhotoBlock td a.left:hover {
-        background: url("../images/bw_leftBbtns.png") no-repeat 0 -60px;
-}
-
-.photo .changePhotoBlock td a.right {
-      width: 68px;
-      height: 64px;
-      line-height: normal;
-      position: absolute;
-      right: 130px;
-      top: 913px;
-	  vertical-align:center;
-      cursor: pointer;
-      background: url("../images/bw_leftBbtns.png") no-repeat 0 -120px;
-      z-index: 999;
-}
-
-.photo .changePhotoBlock td a.right:hover {
-        background: url("../images/bw_leftBbtns.png") no-repeat 0 -192px;
-}
 
 
 /*
-.photo dl.detail img {
-
-	margin:0 auto;
-}
-
-
 .photo dl.detail dt span {
 	font-size:14px;
 	color:#666;
