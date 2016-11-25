@@ -8,7 +8,7 @@
 	border:2px solid #ccc;
 	font-size:12px;
 	margin:0 auto;
-	background:black;
+	background:white;
 }
 
 /*  .photo .left {
@@ -73,7 +73,7 @@
       height: 64px;
       line-height: normal;
       position: absolute;
-      left: 60px;
+      left: 130px;
       top: 913px;
       cursor: pointer;
       background: url("../images/bw_leftBbtns.png") no-repeat 0 0;
@@ -89,7 +89,7 @@
       height: 64px;
       line-height: normal;
       position: absolute;
-      right: 100px;
+      right: 130px;
       top: 913px;
       cursor: pointer;
       background: url("../images/bw_leftBbtns.png") no-repeat 0 -128px;
