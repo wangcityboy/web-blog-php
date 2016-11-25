@@ -11,13 +11,13 @@
 	background:black;
 }
 
-/* .photo .left {
+ .photo .left {
       width: 68px;
       height: 64px;
       line-height: normal;
       position: absolute;
-      left: -16px;
-      top: 313px;
+      left: -106px;
+      top: 713px;
       cursor: pointer;
       background: url("../images/bw_leftBbtns.png") no-repeat 0 0;
       z-index: 999;
@@ -32,8 +32,8 @@
       height: 64px;
       line-height: normal;
       position: absolute;
-      right: -17px;
-      top: 313px;
+      right: -107px;
+      top: 713px;
       cursor: pointer;
       background: url("../images/bw_leftBbtns.png") no-repeat 0 -128px;
       z-index: 999;
@@ -48,7 +48,7 @@
 .photo dl.detail {
 	text-align:center;
 	margin:20px;
-} */
+} 
 
 .photo dl.detail dt a {
 	/* color:#f60;
