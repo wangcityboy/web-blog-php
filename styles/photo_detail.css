@@ -31,13 +31,15 @@
         float: left;
 		display: block;
         padding-left: 30px;
+	    background: url("../images/icon15.gif") no-repeat left;
 }
 	
 .photo .titleTopBlock .rightBlock {
-		widht:200px;
+	    background: url("../images/icon15.gif") no-repeat left;
         float: right;
         display: block;
         padding-right: 30px;
+        
 }
  	
       	
