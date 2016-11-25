@@ -11,7 +11,7 @@
 	background:black;
 }
 
-.photo .left {
+/* .photo .left {
       width: 68px;
       height: 64px;
       line-height: normal;
@@ -48,7 +48,7 @@
 .photo dl.detail {
 	text-align:center;
 	margin:20px;
-}
+} */
 
 .photo dl.detail dt a {
 	/* color:#f60;
@@ -61,7 +61,7 @@
       height: 64px;
       line-height: normal;
       position: absolute;
-      right: -17px;
+      right: 60px;
       top: 613px;
       cursor: pointer;
       background: url("../images/bw_leftBbtns.png") no-repeat 0 -128px;
@@ -81,6 +81,8 @@
 	vertical-align:top;
 	padding:10px;
 }
+
+
 .photo dl.detail dd {
 	padding:10px;
 	font-size:14px;
