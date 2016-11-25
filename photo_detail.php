@@ -131,7 +131,7 @@ if (isset($_GET['id'])) {
                                 发表于：<?php echo $_html['date']?> | 上传者：<?php echo $_html['username']?>
                             </span>
                             <span class="rightBlock">
-                            	浏览量(<strong><?php echo $_html['readcount'];?></strong>) | 评论量(<strong><?php echo $_html['commendcount'];?></strong>)
+                            	<img src="./images/icon15.gif"/>&nbsp;浏览量(<strong><?php echo $_html['readcount'];?></strong>) | 评论量(<strong><?php echo $_html['commendcount'];?></strong>)
                             </span>
                       </div>
 
