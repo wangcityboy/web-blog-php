@@ -51,38 +51,47 @@
 }
 
 .photo dl.detail dt a {
-	color:#f60;
+	/* color:#f60;
 	font-size:14px;
 	font-weight:bold;
 	padding:10px;
 	text-decoration:none;
-	vertical-align:top;
+	vertical-align:top; */
+	 width: 68px;
+      height: 64px;
+      line-height: normal;
+      position: absolute;
+      right: -17px;
+      top: 313px;
+      cursor: pointer;
+      background: url("../images/bw_leftBbtns.png") no-repeat 0 -128px;
+      z-index: 999;
 }
 
-#photo dl.detail img {
+.photo dl.detail img {
 
 	margin:0 auto;
 }
 
 
-#photo dl.detail dt span {
+.photo dl.detail dt span {
 	font-size:14px;
 	color:#666;
 	font-weight:bold;
 	vertical-align:top;
 	padding:10px;
 }
-#photo dl.detail dd {
+.photo dl.detail dd {
 	padding:10px;
 	font-size:14px;
 	margin:0 auto;
 	color:white;
 }
-#photo dl.detail dd.name {
+.photo dl.detail dd.name {
 	font-weight:bold;
 	color:white;
 }
-#photo p.line {
+.photo p.line {
 	clear:both;
 	width:95%;
 	margin:0 auto;
