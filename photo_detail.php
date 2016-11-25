@@ -143,7 +143,7 @@ if (isset($_GET['id'])) {
 	    	<table cellpadding="0" cellspacing="0" border="0" width="100%">
 	           <tr>
 	                <td align="center" valign="middle">
-	                    <?php echo $_html['pre']?><img src="<?php echo $_html['url']?>" width="670" /><?php echo $_html['next']?>
+	                    <?php echo $_html['pre']?><img src="<?php echo $_html['url']?>" width="670"/><?php echo $_html['next']?>
 	                </td>
 	            </tr>
 	        </table>
