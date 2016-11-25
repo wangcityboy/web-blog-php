@@ -11,7 +11,7 @@
 	background:black;
 }
 
- .photo .left {
+/*  .photo .left {
       width: 68px;
       height: 64px;
       line-height: normal;
@@ -41,7 +41,7 @@
 
 .photo .right:hover {
         background: url("../images/bw_leftBbtns.png") no-repeat 0 -192px;
-}
+} */
     	
     	
 
@@ -66,6 +66,38 @@
       cursor: pointer;
       background: url("../images/bw_leftBbtns.png") no-repeat 0 -128px;
       z-index: 999;
+}
+
+.photo dl.detail dt a.left{
+	 width: 68px;
+      height: 64px;
+      line-height: normal;
+      position: absolute;
+      left: -106px;
+      top: 713px;
+      cursor: pointer;
+      background: url("../images/bw_leftBbtns.png") no-repeat 0 0;
+      z-index: 999;
+}
+
+.photo dl.detail dt a.left:hover {
+        background: url("../images/bw_leftBbtns.png") no-repeat 0 -64px;
+}
+
+.photo dl.detail dt a.right {
+      width: 68px;
+      height: 64px;
+      line-height: normal;
+      position: absolute;
+      right: -107px;
+      top: 713px;
+      cursor: pointer;
+      background: url("../images/bw_leftBbtns.png") no-repeat 0 -128px;
+      z-index: 999;
+}
+
+.photo dl.detail dt a.right:hover {
+        background: url("../images/bw_leftBbtns.png") no-repeat 0 -192px;
 }
 
 .photo dl.detail img {
