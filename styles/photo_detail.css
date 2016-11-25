@@ -33,7 +33,7 @@
       /* top: 613px; */
 	  vertical-align:center;
       cursor: pointer;
-      background: url("../images/bw_leftBbtns.png") no-repeat 0 -128px;
+      background: url("../images/bw_leftBbtns.png") no-repeat 0 -120px;
       z-index: 999;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .photo dl.detail dt a.left:hover {
-        background: url("../images/bw_leftBbtns.png") no-repeat 0 -64px;
+        background: url("../images/bw_leftBbtns.png") no-repeat 0 -60px;
 }
 
 .photo dl.detail dt a.right {
@@ -60,9 +60,10 @@
       line-height: normal;
       position: absolute;
       right: 130px;
-      top: 913px;
+      /* top: 913px; */
+	  vertical-align:center;
       cursor: pointer;
-      background: url("../images/bw_leftBbtns.png") no-repeat 0 -128px;
+      background: url("../images/bw_leftBbtns.png") no-repeat 0 -120px;
       z-index: 999;
 }
 
