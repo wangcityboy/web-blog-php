@@ -9,14 +9,78 @@
 	font-size:12px;
 	margin:0 auto;
 	background:black;
+	
+	padding: 20px 0 20px 0;
+    clear: both;
+    zoom: 1;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden; 
 }
+
+
+	
+	
+ 
+#photo .pre {
+      width: 68px;
+      height: 64px;
+      line-height: normal;
+      position: absolute;
+      left: -16px;
+      top: 313px;
+      cursor: pointer;
+      background: url("../images/bw_leftBbtns.png") no-repeat 0 0;
+      z-index: 999;
+}
+	
+#photo .pre:hover {
+        background: url("../images/bw_leftBbtns.png") no-repeat 0 -64px;
+}
+      	
+#photo .next {
+      width: 68px;
+      height: 64px;
+      line-height: normal;
+      position: absolute;
+      right: -17px;
+      top: 313px;
+      cursor: pointer;
+      background: url("../images/bw_leftBbtns.png") no-repeat 0 -128px;
+      z-index: 999;
+}
+
+#photo .next:hover {
+        background: url("../images/bw_leftBbtns.png") no-repeat 0 -192px;
+}
+      	
+/*   #photo {
+    width: 690px;
+    height: 670px;
+    clear: both;
+    zoom: 1;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; }
+    .bwBeautifulCons .changePhotoBlock li {
+      height: 670px;
+      display: block; }
+    .bwBeautifulCons .changePhotoBlock .changePhotoBlockS {
+      width: 690px;
+      height: 670px; }
+    .bwBeautifulCons .changePhotoBlock img {
+      max-width: 690px;
+      max-height: 670px; } */
+    	
+    	
 
 #photo dl.detail {
 	text-align:center;
 	margin:20px;
 }
-#photo dl.detail dt a {
 
+#photo dl.detail dt a {
 	color:#f60;
 	font-size:14px;
 	font-weight:bold;

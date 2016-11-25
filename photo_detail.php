@@ -125,7 +125,11 @@ if (isset($_GET['id'])) {
 <body>
 
 <div id="photo">
-	<a name="pre"></a><a name="next"></a>
+<!-- 	<a name="pre"></a> -->
+<!-- 	<a name="next"></a> -->
+	<div class="pre"></div>
+    <div class="next"></div>
+	
 	<dl class="detail">
 		<dd class="name"><?php echo $_html['name']?></dd>
 		<dt><?php echo $_html['pre']?><img src="<?php echo $_html['url']?>" width="600" /><?php echo $_html['next']?></dt>
