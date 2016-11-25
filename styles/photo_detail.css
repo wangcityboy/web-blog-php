@@ -18,23 +18,54 @@
     line-height: normal;
     padding: 18px 0 0 18px; }
     
-.bwBeautifulCons .titleTopBlock .leftBlock {
-      float: left;
-      display: block; }
+.photo .bw_bc_title {
+      font-size: 30px;
+      color: #333;
+      line-height: 50px;
+      text-align: center;
+}
 
-.bwBeautifulCons .titleTopBlock .leftBlock {
-        width: 111px;
-        height: 32px;
-        line-height: normal;
-        display: block;
-        overflow: hidden;
-        margin-right: 15px;
-        font-size: 14px;
-        line-height: 32px;
+.photo .titleTopBlock {
+      width: auto;
+      height: 32px;
+      padding: 37px 0px 55px 0px;
+}
+	
+.photo .titleTopBlock .leftBlock {
+        float: right;
+}
+	
+.photo .titleTopBlock .rightBlock {
         float: left;
-        text-align: center;
-        text-indent: 20px; }
-        	
+        display: block;
+        padding-left: 30px;
+        background: url("../images/bw_tag_icon2.jpg") no-repeat left center;
+}
+ 	
+.photo .changePhotoBlockS {
+      width: 845px;
+}
+	
+.photo .changePhotoBlockS .leftBtns {
+        width: 60px;
+        height: 60px;
+        left: 0px;
+}
+
+.photo .changePhotoBlockS .leftBtns:hover {
+          background-position: 0px -60px;
+}
+
+.photo .changePhotoBlockS .rightBtns {
+        width: 60px;
+        height: 60px;
+        right: 0px;
+        background-position: 0px -120px;
+}
+
+.photo .changePhotoBlockS .rightBtns:hover {
+          background-position: 0px -180px;
+}
       	
       	
       	
