@@ -24,22 +24,20 @@
       width: auto;
       height: 32px;
       padding: 27px 0px 15px 0px;
-	  font-size:14px;
+	  font-size:15px;
 }
 	
 .photo .titleTopBlock .leftBlock {
         float: left;
 		display: block;
-        padding-left: 30px;
+        padding-left: 50px;
 	    background: url("../images/icon15.gif") no-repeat left;
 }
 	
 .photo .titleTopBlock .rightBlock {
-	    background: url("../images/icon15.gif") no-repeat left;
         float: right;
         display: block;
-        padding-right: 30px;
-        
+        padding-right: 50px;    
 }
  	
       	
