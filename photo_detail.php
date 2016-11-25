@@ -125,7 +125,7 @@ if (isset($_GET['id'])) {
 <body>
 
 <div class="photo">
-    	<div class="changePhotoBlock">
+    	<div class="changePhotoBlockS">
     	<div class="leftBtns"><a name="pre"></a></div>
     	<div class="rightBtns"><a name="next"></a></div>
     	<div class="changePhotoBlock" id="changePhotoBlock">
