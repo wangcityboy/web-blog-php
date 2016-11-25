@@ -57,12 +57,12 @@
 	padding:10px;
 	text-decoration:none;
 	vertical-align:top; */
-	 width: 68px;
+	  width: 68px;
       height: 64px;
       line-height: normal;
       position: absolute;
       right: -17px;
-      top: 313px;
+      top: 613px;
       cursor: pointer;
       background: url("../images/bw_leftBbtns.png") no-repeat 0 -128px;
       z-index: 999;
