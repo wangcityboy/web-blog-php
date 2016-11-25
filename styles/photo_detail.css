@@ -28,14 +28,16 @@
 }
 	
 .photo .titleTopBlock .leftBlock {
-        float: right;
+        float: left;
+		display: block;
+        padding-left: 30px;
 }
 	
 .photo .titleTopBlock .rightBlock {
-        float: left;
+        float: right;
         display: block;
-        padding-left: 30px;
-        background: url("../images/bw_tag_icon2.jpg") no-repeat left center;
+        padding-right: 30px;
+        background: url("../images/icon15.gif") no-repeat right center;
 }
  	
       	
