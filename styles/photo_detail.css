@@ -27,7 +27,7 @@
       height: 64px;
       line-height: normal;
       position: absolute;
-      left: -16px;
+      left: -26px;
       top: 313px;
       cursor: pointer;
       background: url("../images/bw_leftBbtns.png") no-repeat 0 0;
@@ -41,7 +41,7 @@
       height: 64px;
       line-height: normal;
       position: absolute;
-      right: -17px;
+      right: -27px;
       top: 313px;
       cursor: pointer;
       background: url("../images/bw_leftBbtns.png") no-repeat 0 -128px;
