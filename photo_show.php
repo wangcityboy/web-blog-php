@@ -140,6 +140,7 @@ $(document).ready(function(){
 			<a href="photo_detail.php?id=<?php echo $_html['id']?>"> <img class="lazy thumb_photo" title="1" src="images/pixel.gif" data-original="<?php echo $_html['url']?>" width="225"/></a>
 		</div>
 	</div>
+
 	<?php }
 	?>
 	<?php 
@@ -149,6 +150,11 @@ $(document).ready(function(){
 		echo '</form>';
 	}
 	?>
+		<!--瀑布流 end-->
+	<div class="clear"></div>
+	<div class="load_more">
+		<span class="load_more_text">加载更多...</span>
+	</div>
 </div>
 
 <?php 
