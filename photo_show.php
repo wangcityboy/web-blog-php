@@ -78,10 +78,39 @@ $_result = _query("SELECT
 ?>
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/notification.js"></script>
+<script type="text/javascript" src="js/bigimg.js"></script>
 <script type="text/javascript" src="js/jquery.lazyload.min.js" ></script>
 <script type="text/javascript" src="js/blocksit.min.js"></script>
 <script type="text/javascript" src="js/photo.js"></script>
-
+<script type="text/javascript">
+$(document).ready(function(){
+    var count = 14;
+    // 点击加载更多
+    $('.load_more').click(function(){
+        var html = "";
+        var img = '';
+        for(var i = count; i < count+13; i++){
+            var n = Math.round(Math.random(1)*13);
+            var src = 'images/'+n+'.jpg';
+            html = html + "<div class='grid'>"+
+                "<div class='imgholder'>"+
+                "<img class='lazy thumb_photo' title='"+i+"' src='images/pixel.gif' data-original='"+src+"' width='225' onclick='seeBig(this)'/>"+
+                "</div>"+
+                "</div>";
+            img = img + "<img class='img' src='"+src+"'>";
+        }
+        count = count + 13;
+        $('#container').append(html);
+        $('.content').append(img);
+        $('#container').BlocksIt({
+            numOfCol:2,  //每行显示数
+            offsetX: 3,  //图片的间隔
+            offsetY: 3   //图片的间隔
+        });
+        $("img.lazy").lazyload();
+    });
+});
+</script>
 <link rel="stylesheet" href="styles/pubu.css" type="text/css" media='screen'/>
 
 </head>
