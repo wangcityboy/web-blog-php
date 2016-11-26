@@ -15,7 +15,7 @@
 .l_box { width: 690px;}
 .r_box { width: 300px;}
 
-/* 幻灯片 */
+/* 首页幻灯片 */
 .banner { height : 280px; width : 670px; overflow : hidden;background:#ececec; border:#FFF 5px solid;}
 #slide-runner { height : 280px; width : 670px; overflow : hidden; position : absolute; }
 #slide-holder img { position : absolute; }
@@ -91,10 +91,6 @@
 .ad { width: 300px; overflow: hidden; margin: 20px 0;background:#ececec; border:#FFF 5px solid;}
 .ad h3 { line-height: 40px; color: #38485A; font-size: 18px; border-bottom: 1px solid #E6E6E6; height: 20px; margin-bottom: 20px }
 .ad img { width: 300px; }
-
-
-
-
 
 
 /*友情链接||常用工具*/
