@@ -136,10 +136,11 @@ $_photo = _fetch_array("SELECT
 	<div class="banner">
 	      <div id="slide-holder">
 	        <div id="slide-runner"> 
-	        <a href="/" target="_blank"><img id="slide-img-1" src="images/banner02.jpg"  alt="" /></a> 
-	        <a href="/" target="_blank"><img id="slide-img-2" src="images/banner04.jpg"  alt="" /></a> 
-	        <a href="/" target="_blank"><img id="slide-img-3" src="images/banner09.jpg"  alt="" /></a> 
-	        <a href="/" target="_blank"><img id="slide-img-4" src="images/banner06.jpg"  alt="" /></a>
+	        <a href="/" target="_blank"><img id="slide-img-1" src="images/slide4.jpg"  alt="" /></a> 
+	        <a href="/" target="_blank"><img id="slide-img-2" src="images/slide5.jpg"  alt="" /></a> 
+	        <a href="/" target="_blank"><img id="slide-img-3" src="images/slide10.gif"  alt="" /></a> 
+	        <a href="/" target="_blank"><img id="slide-img-4" src="images/slide19.jpg"  alt="" /></a>
+	        <a href="/" target="_blank"><img id="slide-img-5" src="images/slide29.jpg"  alt="" /></a>
 	          <div id="slide-controls">
 	            <p id="slide-client" class="text"><strong></strong><span></span></p>
 	            <p id="slide-desc" class="text"></p>
@@ -173,7 +174,12 @@ $_photo = _fetch_array("SELECT
 	        "id":"slide-img-4",
 	        "client":"",
 	        "desc":"伸手需要一瞬间，牵手却要很多年，无论你遇见谁，他都是你生命该出现的人，绝非偶然！"
-	    } 
+	    },
+	    {
+	        "id":"slide-img-5",
+	        "client":"",
+	        "desc":"人生若只如初见，你若安好，便是晴天"
+	    }
 		];
 		</script> 
 	 </div>
