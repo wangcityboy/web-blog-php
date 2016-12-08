@@ -7,7 +7,6 @@ define('SCRIPT','photo_show');
 //引入公共文件
 require dirname(__FILE__).'/includes/common.inc.php';
 
-
 //取值
 if (isset($_GET['id'])) {
 	if (!!$_rows = _fetch_array("SELECT 
@@ -50,9 +49,6 @@ if (isset($_GET['id'])) {
 	_alert_back('非法操作！');
 }
 
-global $_pagesize,$_pagenum,$_system,$_id;
-$_id = 'id='.$_dirhtml['id'].'&';
-_page("SELECT tg_id FROM tg_photo WHERE tg_sid='{$_dirhtml['id']}'",8); 
 $_result = _query("SELECT 
 												tg_id,tg_username,tg_name,tg_url,tg_readcount,tg_commendcount 
 									FROM 
@@ -82,41 +78,10 @@ $_result = _query("SELECT
 <script type="text/javascript" src="js/jquery.lazyload.min.js" ></script>
 <script type="text/javascript" src="js/blocksit.min.js"></script>
 <script type="text/javascript" src="js/photo.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-    var count = 14;
-    // 点击加载更多
-    $('.load_more').click(function(){
-        var html = "";
-        var img = '';
-        for(var i = count; i < count+13; i++){
-            var n = Math.round(Math.random(1)*13);
-            var src = 'images/'+n+'.jpg';
-            html = html + "<div class='grid'>"+
-                "<div class='imgholder'>"+
-                "<img class='lazy thumb_photo' title='"+i+"' src='images/pixel.gif' data-original='"+src+"' width='225' onclick='seeBig(this)'/>"+
-                "</div>"+
-                "</div>";
-            img = img + "<img class='img' src='"+src+"'>";
-        }
-        count = count + 13;
-        $('#container').append(html);
-        $('.content').append(img);
-        $('#container').BlocksIt({
-            numOfCol:2,  //每行显示数
-            offsetX: 3,  //图片的间隔
-            offsetY: 3   //图片的间隔
-        });
-        $("img.lazy").lazyload();
-    });
-});
-</script>
 <link rel="stylesheet" href="styles/pubu.css" type="text/css" media='screen'/>
 
 </head>
 <body>
-
-
 
 <div id="wrapper">
 	<div id="container" style="width:1000px;">
@@ -150,11 +115,6 @@ $(document).ready(function(){
 		echo '</form>';
 	}
 	?>
-		<!--瀑布流 end-->
-	<div class="clear"></div>
-	<div class="load_more">
-		<span class="load_more_text">加载更多...</span>
-	</div>
 </div>
 
 <?php 

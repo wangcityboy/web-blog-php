@@ -452,15 +452,4 @@ function _code($_width = 75,$_height = 25,$_rnd_code = 4,$_flag = false) {
 	imagedestroy($_img);
 }
 
-
-
-
-
-
-
-
-
-
-
-
 ?>

@@ -6,8 +6,7 @@ define('IN_TG',true);
 define('SCRIPT','article');
 //引入公共文件
 require dirname(__FILE__).'/includes/common.inc.php'; //转换成硬路径，速度更快
-
-//读取全部帖子列表
+	//读取全部帖子列表
 	$_result = _query("SELECT
 			tg_id,tg_title,tg_content,tg_image
 			FROM
@@ -19,15 +18,14 @@ require dirname(__FILE__).'/includes/common.inc.php'; //转换成硬路径，速
 			LIMIT
 			6
 			");
-	
-	
-	//读取全个人日志帖子列表
-	$_res = _query("SELECT
+
+	//读取日志帖子列表(生活随笔，网络文摘)
+	$_literature = _query("SELECT
 			tg_id,tg_content,tg_title,tg_image
 			FROM
 			tg_article
 			WHERE
-			tg_reid=0
+			tg_reid=0 AND tg_classify in (10013,10014)
 			ORDER BY
 			tg_readcount DESC
 			LIMIT
@@ -37,7 +35,6 @@ require dirname(__FILE__).'/includes/common.inc.php'; //转换成硬路径，速
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
 <?php 
 	require ROOT_PATH.'includes/title.inc.php';
 ?>
@@ -67,13 +64,13 @@ require dirname(__FILE__).'/includes/common.inc.php'; //转换成硬路径，速
 		?>
 </div>
 
-<div class="text6">技术・成长</div>
+<div class="text6">文学・散文</div>
 <div class="hope">
   <ul>
     <div class="visitors">	
     	<?php
 			$_htmllist = array();
-			while (!!$_rows = _fetch_array_list($_res)) {
+			while (!!$_rows = _fetch_array_list($_literature)) {
 				$_htmllist['id'] = $_rows['tg_id'];
 				$_htmllist['content'] = $_rows['tg_content'];
 				$_htmllist['title'] = $_rows['tg_title'];

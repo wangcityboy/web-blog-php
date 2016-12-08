@@ -8,13 +8,11 @@ define('SCRIPT','index');
 require dirname(__FILE__).'/includes/common.inc.php'; //转换成硬路径，速度更快
 //读取帖子列表
 global $_pagesize,$_pagenum,$_system;
-
 $_classify = $_GET['classify'];
-
 if($_classify != 0){
 	_page("SELECT tg_id FROM tg_article WHERE tg_reid=0 AND tg_classify='{$_classify}'",$_system['article']);
 	$_result = _query("SELECT
-			tg_id,tg_title,tg_username,tg_type,tg_readcount,tg_commendcount,tg_content,tg_date,tg_classify,tg_image
+			tg_id,tg_title,tg_username,tg_nickname,tg_type,tg_readcount,tg_commendcount,tg_content,tg_date,tg_classify,tg_image
 			FROM
 			tg_article
 			WHERE
@@ -27,7 +25,7 @@ if($_classify != 0){
 }else{
 	_page("SELECT tg_id FROM tg_article WHERE tg_reid=0",$_system['article']);
 	$_result = _query("SELECT
-			tg_id,tg_title,tg_username,tg_type,tg_readcount,tg_commendcount,tg_content,tg_date,tg_classify,tg_image
+			tg_id,tg_title,tg_username,tg_nickname,tg_type,tg_readcount,tg_commendcount,tg_content,tg_date,tg_classify,tg_image
 			FROM
 			tg_article
 			WHERE
@@ -39,9 +37,9 @@ if($_classify != 0){
 			");
 }
 
-
-$_res = _query("SELECT
-		tg_id,tg_title,tg_username,tg_type,tg_readcount,tg_commendcount,tg_content,tg_date,tg_classify,tg_image
+//获取生活随笔文章列表(生活随笔)
+$_life = _query("SELECT
+		tg_id,tg_title,tg_type,tg_readcount,tg_date,tg_classify,tg_image
 		FROM
 		tg_article
 		WHERE
@@ -51,9 +49,9 @@ $_res = _query("SELECT
 		LIMIT
 		5
 		");
-
+//获取文章根据阅读访问量来进行排名(点击排行)
 $_rank = _query("SELECT
-            tg_id,tg_title,tg_type,tg_commendcount
+            tg_id,tg_title,tg_type
     FROM
             tg_article
     WHERE
@@ -63,9 +61,9 @@ $_rank = _query("SELECT
     LIMIT
             6
     ");
-
+//获取测试开发文章列表(测试开发)
 $_test = _query("SELECT
-            tg_id,tg_title,tg_type,tg_commendcount
+            tg_id,tg_title,tg_type
     FROM
             tg_article
     WHERE
@@ -76,9 +74,9 @@ $_test = _query("SELECT
             6
     ");
 
-
+//获取信息技术文章列表(信息技术)
 $_it = _query("SELECT
-            tg_id,tg_title,tg_type,tg_commendcount
+            tg_id,tg_title,tg_type
     FROM
             tg_article
     WHERE
@@ -104,43 +102,34 @@ $_photo = _fetch_array("SELECT
 												LIMIT 
 															1
 ");
-
-
 ?>
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-	
 <?php 
 	require ROOT_PATH.'includes/title.inc.php';
 ?>
-
 <?php 
 	require ROOT_PATH.'includes/header.inc.php';
 ?>
-
 <script type="text/javascript"  src="js/blog.js"></script>
 <script type="text/javascript"  src="js/jquery.min.js"></script>
 <script type="text/javascript"  src="js/sliders.js"></script>
 <script type="text/javascript"  src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
 </head>
 
-
 <body>
 <article id="index">
+<!--首页左边栏目 -->
 <div class="l_box f_l">
-
 	<div class="banner">
 	      <div id="slide-holder">
 	        <div id="slide-runner"> 
-	        <a href="/" target="_blank"><img id="slide-img-1" src="images/slide4.jpg"  alt="" /></a> 
-	        <a href="/" target="_blank"><img id="slide-img-2" src="images/slide5.jpg"  alt="" /></a> 
-	        <a href="/" target="_blank"><img id="slide-img-3" src="images/slide10.gif"  alt="" /></a> 
-	        <a href="/" target="_blank"><img id="slide-img-4" src="images/slide19.jpg"  alt="" /></a>
-	        <a href="/" target="_blank"><img id="slide-img-5" src="images/slide29.jpg"  alt="" /></a>
+	        <a href="/" target="_blank"><img id="slide-img-1" src="resource/slide/slide4.jpg"  alt="" /></a> 
+	        <a href="/" target="_blank"><img id="slide-img-2" src="resource/slide/slide53.jpg"  alt="" /></a> 
+	        <a href="/" target="_blank"><img id="slide-img-3" src="resource/slide/slide10.gif"  alt="" /></a> 
+	        <a href="/" target="_blank"><img id="slide-img-4" src="resource/slide/slide19.jpg"  alt="" /></a>
+	        <a href="/" target="_blank"><img id="slide-img-5" src="resource/slide/slide29.jpg"  alt="" /></a>
 	          <div id="slide-controls">
 	            <p id="slide-client" class="text"><strong></strong><span></span></p>
 	            <p id="slide-desc" class="text"></p>
@@ -150,41 +139,40 @@ $_photo = _fetch_array("SELECT
 	      </div>
 	      
 	     <script>
-		if(!window.slider) {
-			var slider={};
-		 }
-	
-		slider.data= [
-	    {
-	        "id":"slide-img-1", 
-	        "client":"",
-	        "desc":"陪伴是最长情的告白，相守是最温暖的承诺。" 
-	    },
-	    {
-	        "id":"slide-img-2",
-	        "client":"",
-	        "desc":"一念成悦，处处繁花处处锦；一念成执，寸寸相思寸寸灰。"
-	    },
-	    {
-	        "id":"slide-img-3",
-	        "client":"",
-	        "desc":"青春是一场高烧，怀念是紧接着好不了的咳。"
-	    },
-	    {
-	        "id":"slide-img-4",
-	        "client":"",
-	        "desc":"伸手需要一瞬间，牵手却要很多年，无论你遇见谁，他都是你生命该出现的人，绝非偶然！"
-	    },
-	    {
-	        "id":"slide-img-5",
-	        "client":"",
-	        "desc":"人生若只如初见，你若安好，便是晴天"
-	    }
-		];
+			if(!window.slider) {
+				var slider={};
+			 }
+		
+			slider.data= [
+		    {
+		        "id":"slide-img-1", 
+		        "client":"",
+		        "desc":"陪伴是最长情的告白，相守是最温暖的承诺。" 
+		    },
+		    {
+		        "id":"slide-img-2",
+		        "client":"",
+		        "desc":"一念成悦，处处繁花处处锦；一念成执，寸寸相思寸寸灰。"
+		    },
+		    {
+		        "id":"slide-img-3",
+		        "client":"",
+		        "desc":"青春是一场高烧，怀念是紧接着好不了的咳。"
+		    },
+		    {
+		        "id":"slide-img-4",
+		        "client":"",
+		        "desc":"伸手需要一瞬间，牵手却要很多年，无论你遇见谁，他都是你生命该出现的人，绝非偶然！"
+		    },
+		    {
+		        "id":"slide-img-5",
+		        "client":"",
+		        "desc":"人生若只如初见，你若安好，便是晴天!"
+		    }
+			];
 		</script> 
 	 </div>
 
-    
 
 	<div class="topnews">
 	     <h2>
@@ -199,7 +187,7 @@ $_photo = _fetch_array("SELECT
 	     <a href="index.php?classify=10013" target="_self">生活随笔</a>
 	     <a href="index.php?classify=10014" target="_self">网络文摘</a>
 	     </span>
-	     <b>文章</b>推荐
+	     <b>文章推荐</b>
 	     </h2>
 			<?php
 				$_htmllist = array();
@@ -210,6 +198,7 @@ $_photo = _fetch_array("SELECT
 					$_htmllist['commendcount'] = $_rows['tg_commendcount'];
 					$_htmllist['title'] = $_rows['tg_title'];
 					$_htmllist['username'] = $_rows['tg_username'];
+					$_htmllist['nickname'] = $_rows['tg_nickname'];
 					$_htmllist['image'] = $_rows['tg_image'];
 					$_htmllist["content"] = $_rows['tg_content'];
 					$_htmllist['date'] = $_rows['tg_date'];
@@ -223,7 +212,7 @@ $_photo = _fetch_array("SELECT
 					echo '<ul>';
 					echo '<h3><a href="article_detail.php?id='.$_htmllist['id'].'">'.$_htmllist['title'].'</a></h3>';
 					echo '<p>'._title(strip_tags(htmlspecialchars_decode($_htmllist["content"])),100).'</p>';
-					echo '<p class="autor"><span class="lm f_l"><a href="index.php?classify='.$_htmllist['classify'].'">'.$_str.'</a></span><span class="dtime f_l">'.$_htmllist['username'].' 发表于 '.$_htmllist['date'].'</span><span class="viewnum f_r">浏览（<a href="/">'.$_htmllist['readcount'].'</a>）</span></p>';
+					echo '<p class="autor"><span class="lm f_l"><a href="index.php?classify='.$_htmllist['classify'].'">'.$_str.'</a></span><span class="dtime f_l">'.$_htmllist['nickname'].' 发表于 '.$_htmllist['date'].'</span><span class="viewnum f_r">浏览（<a href="/">'.$_htmllist['readcount'].'</a>）</span></p>';
 					echo '</ul>';
 					echo '</div>';
 		}
@@ -231,10 +220,9 @@ $_photo = _fetch_array("SELECT
 			?>
 					<?php _paging($_classify,2);?>
 				</div>
-	
 	</div>
 
-
+<!--首页右边栏目 -->
  <div class="r_box f_r">
  
     <div class="tit01">
@@ -287,16 +275,12 @@ $_photo = _fetch_array("SELECT
 	</center>
     </div>
     
-   
-   
-   
     <div class="moreSelect" id="lp_right_select"> 
 		<script>
 			window.onload = function ()
 			{
 				var oLi = document.getElementById("tab").getElementsByTagName("li");
 				var oUl = document.getElementById("ms-main").getElementsByTagName("div");
-				
 				for(var i = 0; i < oLi.length; i++)
 				{
 					oLi[i].index = i;
@@ -319,8 +303,7 @@ $_photo = _fetch_array("SELECT
           <li><a href="/">站长推荐</a></li>
         </ul>
       </div>
-      
-      
+
       <div class="ms-main" id="ms-main">
         <div style="display: block;" class="bd bd-news" >
           <ul>
@@ -336,8 +319,7 @@ $_photo = _fetch_array("SELECT
 		?>
           </ul>
         </div>
-        
-        
+
         <div  class="bd bd-news">
           <ul>
             <?php
@@ -352,9 +334,7 @@ $_photo = _fetch_array("SELECT
 		?>
           </ul>
         </div>
-        
-        
-        
+
         <div class="bd bd-news">
           <ul>
          <?php
@@ -399,7 +379,7 @@ $_photo = _fetch_array("SELECT
       <ul>
         <?php
 			$_htmllist = array();
-			while (!!$_rows = _fetch_array_list($_res)) {
+			while (!!$_rows = _fetch_array_list($_life)) {
 				$_htmllist['id'] = $_rows['tg_id'];
 				$_htmllist['title'] = $_rows['tg_title'];
 				$_htmllist['image'] = $_rows['tg_image'];
@@ -412,20 +392,17 @@ $_photo = _fetch_array("SELECT
 				echo '<p><span class="tulanmu"><a href="/">'.$_str.'</a></span><span class="tutime">'.$_htmllist['date'].'</span></p>';			 		
 				echo '</li>';	
 	}
-			_free_result($_res);
+			_free_result($_life);
 		?> 
       </ul>
     </div>
     
     
      <div class="ad">
-     <h3>最新图片</h3>
+     	  <h3>最新图片</h3>
           <a href="photo_detail.php?id=<?php echo $_photo['id']?>"><img src="<?php echo $_photo['url']?>" alt="<?php echo $_photo['name']?>" /></a>
      </div> 
 
-
-    
-    
     <div class="links">
       <h3><span>[<a href="/">申请友情链接</a>]</span>友情链接</h3>
       <ul>
@@ -452,11 +429,8 @@ $_photo = _fetch_array("SELECT
  	
 </article>
 
-
 <?php 
 	require ROOT_PATH.'includes/footer.inc.php';
 ?>
-
-
 </body>
 </html>

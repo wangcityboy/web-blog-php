@@ -7,17 +7,18 @@ header {
 
 .wraper{ 
 	width:1000px; 
-	padding-top:100px; 
+	/* padding-top:150px;  */
 	margin:0 auto
 }
 .quotes { 
 	width: 1000px; 
 	position: relative; 
-	margin: 80px auto 80px 10px;
+	margin: 60px auto 260px 10px;
 }
 .quotes p { 
-	text-shadow: #3D5E26 1px 1px 1px; 
-	color: #fff; width: 330px; 
-	line-height: 26px;
+	text-shadow: #3D5E26 2px 2px 2px; 
+	color: #fff; 
+	width: 330px; 
+	line-height: 23px;
 }
 

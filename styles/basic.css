@@ -2,7 +2,10 @@
 
 body { 
 	font-size: 12px; 
-	background: #3D5E26 url(../images/bg-girl.jpg) center 0 scroll no-repeat; 
+	/* background-image:url(../resource/banner/banner43.jpg),url(../resource/banner/banner01.gif);
+	background-repeat: no-repeat, repeat;  
+	background-position: 0 0, 400px 0;  */
+	background: #000000 url(../resource/banner/banner43.jpg) center 0 scroll no-repeat; 
 }
 
 
@@ -16,9 +19,6 @@ a:link, a:visited { text-decoration: none; color: #666 }
 a:hover { text-decoration: none; }
 .clear { clear: both; }
 .blank { height: 5px; overflow: hidden; width: 100%; margin: auto; clear: both }
-
-
-
 
 
 
