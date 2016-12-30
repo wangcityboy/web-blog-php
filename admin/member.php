@@ -6,7 +6,6 @@ define('IN_TG',true);
 define('SCRIPT','member');
 //设置字符集编码
 header('Content-Type: text/html; charset=utf-8');
-
 //引入公共文件
 require dirname(__FILE__).'/common/common.inc.php';
 //是否正常登录
@@ -23,8 +22,12 @@ if (isset($_COOKIE['username'])) {
 			");
 			if ($_rows) {
 			$_html= array();
-		$_html['username'] = $_rows['tg_username'];
-			$_html['sex'] = $_rows['tg_sex'];
+			$_html['username'] = $_rows['tg_username'];
+			if ($_rows['tg_sex'] == 1){
+				$_html['sex'] = "男";
+			}else{
+				$_html['sex'] = "女";
+			}
 			$_html['face'] = $_rows['tg_face'];
 			$_html['email'] = $_rows['tg_email'];
 			$_html['url'] = $_rows['tg_url'];
@@ -49,9 +52,6 @@ if (isset($_COOKIE['username'])) {
 	_alert_back('非法登录');
 }
 
-
-
- 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">

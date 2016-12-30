@@ -16,18 +16,17 @@ $result = _query("SELECT
 	AND
 		tg_id='{$_GET['id']}'");
 
+//多说评论插件获取数据
 $web_ad = mysql_fetch_array($result);
-
 $ad_title=$web_ad['tg_title'];
 $ad_id=$web_ad['tg_id'];
-
-
 
 //读出数据
 if (isset($_GET['id'])) {
 	if (!!$_rows = _fetch_array("SELECT 
 																	tg_id,
 																	tg_username,
+																	tg_nickname,
 																	tg_classify,
 																	tg_title,
 																	tg_type,
@@ -49,7 +48,7 @@ if (isset($_GET['id'])) {
 	
 		$_html = array();
 		$_html['reid'] = $_rows['tg_id'];
-		$_html['username_subject'] = $_rows['tg_username'];
+		$_html['nickname'] = $_rows['tg_nickname'];
 		$_html['classify'] = $_rows['tg_classify'];
 		$_html['title'] = $_rows['tg_title'];
 		$_html['type'] = $_rows['tg_type'];
@@ -87,7 +86,7 @@ if (isset($_GET['id'])) {
 		<div class="content">
 		<h1><?php echo $_html['title']?></h1>
 			<div class="user">
-				<span><?php echo $_html['username_subject']?> | 发表于：<?php echo $_html['date']?> | 日志分类：<?php echo $_str?> | 阅读量：(<?php echo $_html['readcount']?>) </span>
+				<span><?php echo $_html['nickname']?> | 发表于：<?php echo $_html['date']?> | 日志分类：<?php echo $_str?> | 阅读量：(<?php echo $_html['readcount']?>) </span>
 			</div>
 			<div class="detail">
 				<?php echo ($_html['content'])?>

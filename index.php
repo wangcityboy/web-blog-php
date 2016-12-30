@@ -49,6 +49,7 @@ $_life = _query("SELECT
 		LIMIT
 		5
 		");
+
 //获取文章根据阅读访问量来进行排名(点击排行)
 $_rank = _query("SELECT
             tg_id,tg_title,tg_type
@@ -61,6 +62,7 @@ $_rank = _query("SELECT
     LIMIT
             6
     ");
+
 //获取测试开发文章列表(测试开发)
 $_test = _query("SELECT
             tg_id,tg_title,tg_type
@@ -218,8 +220,8 @@ $_photo = _fetch_array("SELECT
 		}
 				_free_result($_result);
 			?>
-					<?php _paging($_classify,2);?>
-				</div>
+			<?php _paging($_classify,2);?>
+		</div>
 	</div>
 
 <!--首页右边栏目 -->
@@ -388,7 +390,7 @@ $_photo = _fetch_array("SELECT
 				$_htmllist = _html($_htmllist);				
 				$_str = _getClassify($_htmllist['classify']);
 
-				echo '<li><a href="article_detail.php?id='.$_htmllist['id'].'"><img src="'.$_htmllist['image'].'">'.$_htmllist['title'].'</a>';
+				echo '<li><a href="article_detail.php?id='.$_htmllist['id'].'"><img src="'.$_htmllist['image'].'"><b>'.$_htmllist['title'].'</b></a>';
 				echo '<p><span class="tulanmu"><a href="/">'.$_str.'</a></span><span class="tutime">'.$_htmllist['date'].'</span></p>';			 		
 				echo '</li>';	
 	}

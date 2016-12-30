@@ -96,24 +96,24 @@ if (!!$_rows = _fetch_array("SELECT
 	$_html = _html($_html);
 	
 	//文章
-	if ($_html['article'] == 10) {
-		$_html['article_html'] = '<select name="article"><option value="10" selected="selected">每页10篇</option><option value="15">每页15篇</option></select>';
-	} elseif ($_html['article'] == 15) {
-		$_html['article_html'] = '<select name="article"><option value="10">每页10篇</option><option value="15" selected="selected">每页15篇</option></select>';
+	if ($_html['article'] == 8) {
+		$_html['article_html'] = '<select name="article"><option value="8" selected="selected">每页8篇</option><option value="10">每页10篇</option></select>';
+	} elseif ($_html['article'] == 10) {
+		$_html['article_html'] = '<select name="article"><option value="8">每页8篇</option><option value="10" selected="selected">每页10篇</option></select>';
 	}
 	
 	//博友
 	if ($_html['blog'] == 15) {
-		$_html['blog_html'] = '<select name="blog"><option value="15" selected="selected">每页15人</option><option value="20">每页20人</option></select>';
+		$_html['blog_html'] = '<select name="blog"><option value="10" selected="selected">每页10人</option><option value="20">每页20人</option></select>';
 	} elseif ($_html['blog'] == 20) {
-		$_html['blog_html'] = '<select name="blog"><option value="15">每页15人</option><option value="20" selected="selected">每页20人</option></select>';
+		$_html['blog_html'] = '<select name="blog"><option value="10">每页10人</option><option value="20" selected="selected">每页20人</option></select>';
 	}
 	
 	//相册
-	if ($_html['photo'] == 8) {
-		$_html['photo_html'] = '<select name="photo"><option value="8" selected="selected">每页8张</option><option value="12">每页12张</option></select>';
-	} elseif ($_html['photo'] == 12) {
-		$_html['photo_html'] = '<select name="photo"><option value="8">每页8张</option><option value="12" selected="selected">每页12张</option></select>';
+	if ($_html['photo'] == 10) {
+		$_html['photo_html'] = '<select name="photo"><option value="10" selected="selected">每页10张</option><option value="20">每页20张</option></select>';
+	} elseif ($_html['photo'] == 20) {
+		$_html['photo_html'] = '<select name="photo"><option value="10">每页10张</option><option value="20" selected="selected">每页20张</option></select>';
 	}
 	
 	//皮肤
@@ -183,7 +183,7 @@ if (!!$_rows = _fetch_array("SELECT
 		<dl>
 			<dd>网 站 名 称：<input type="text" name="webname" class="text" value="<?php echo $_html['webname']?>" /></dd>
     		<dd>文章每页列表数：<?php echo $_html['article_html'];?></dd>
-    		<dd>博客每页列表数：<?php echo $_html['blog_html'];?></dd>
+    		<dd>博友每页列表数：<?php echo $_html['blog_html'];?></dd>
     		<dd>相册每页列表数：<?php echo $_html['photo_html'];?></dd>
     		<dd>站点 默认 皮肤：<?php echo $_html['skin_html'];?></dd>
     		<dd>非法 字符 过滤：<input type="text" name="string" class="text" value="<?php echo $_html['string'];?>" /> (*请用|线隔开)</dd>

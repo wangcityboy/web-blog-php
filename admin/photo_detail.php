@@ -88,10 +88,6 @@ if (isset($_GET['id'])) {
 				_alert_back('相册目录表出错了！');
 			}
 		}
-	
-		
-	
-	
 		//累积阅读量
 		_query("UPDATE tg_photo SET tg_readcount=tg_readcount+1 WHERE tg_id='{$_GET['id']}'");
 		
@@ -175,8 +171,6 @@ if (isset($_GET['id'])) {
 } else {
 	_alert_back('非法操作！');
 }
-
-
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -187,10 +181,8 @@ if (isset($_GET['id'])) {
 <link rel="stylesheet" type="text/css" href="css/photo_detail.css" />
 <script type="text/javascript" src="js/article.js"></script>
 </head>
+
 <body>
-
-
-
 <div id="member">
 <?php 
 	require ROOT_PATH.'common/member.inc.php';

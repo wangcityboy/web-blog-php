@@ -6,7 +6,10 @@ define('IN_TG',true);
 define('SCRIPT','note_manage');
 //引入公共文件
 require dirname(__FILE__).'/common/common.inc.php'; //转换成硬路径，速度更快
-
+//判断是否登录了
+if (!isset($_COOKIE['username'])) {
+	_alert_back('请先登录！');
+}
 global $_pagesize,$_pagenum,$_system;
 _page("SELECT tg_id FROM tg_article WHERE tg_reid=0",15);
 //读取帖子列表
@@ -66,8 +69,6 @@ _page("SELECT tg_id FROM tg_article WHERE tg_reid=0",15);
 </head>
 <body>
 
-
-  
 <div id="member">
 	<?php 
 		require ROOT_PATH.'common/member.inc.php';
@@ -77,7 +78,7 @@ _page("SELECT tg_id FROM tg_article WHERE tg_reid=0",15);
 		<h2>日志管理中心</h2>
 		<form method="post" action="?action=delete">
 		<table cellspacing="1">
-			<tr><th>操作</th><th>日志标题</th><th>所属分类</th><th>浏览量</th><th>修改</th></tr>
+			<tr><th>勾选操作</th><th>日志标题</th><th>所属分类</th><th>浏览量</th><th>是否修改</th></tr>
 			<?php 
 				$_htmllist = array();
 				while (!!$_rows = _fetch_array_list($_result)) {
@@ -109,11 +110,12 @@ _page("SELECT tg_id FROM tg_article WHERE tg_reid=0",15);
 				}
 				_free_result($_result);
 			?>
-			<?php _paged(2);?>
-			<tr><td colspan="5"><label for="all">全选 <input type="checkbox" name="chkall" id="all" /></label> <input type="submit" value="批删除" /></td></tr>
+		
+			
+			<tr><td colspan="5"><label for="all">全选 <input type="checkbox" name="chkall" id="all" /></label><input type="submit" value="批删除" /></td></tr>
 		</table>
 		</form>
-	
+		<?php _paging(1,2);?>
 	</div>
 </div>
 

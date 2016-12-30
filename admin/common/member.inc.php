@@ -13,15 +13,15 @@ if (!defined('IN_TG')) {
 			<dd><a href="user_manage.php">用户管理</a></dd>
 			<dd><a href="note_manage.php">日志管理</a></dd>
 			<dd><a href="photo.php">相册管理</a></dd>
+			<dd><a href="post.php">发表日志</a></dd>
 		<dl>
 			<dt>网站管理</dt>
-			<dd><a href="post.php">发表日志</a></dd>
 			<dd><a href="manage_set.php">系统设置</a></dd>
 			<dd><a href="manage_job.php">会员中心</a></dd>
-			<dd><a href="logout.php">退出登录</a></dd>
 			<dd><a href="member_message.php">短信查阅</a></dd>
 			<dd><a href="member_friend.php">好友设置</a></dd>
 			<dd><a href="member_flower.php">查询花朵</a></dd>
+			<dd><a href="logout.php">退出登录</a></dd>
 		</dl>
 		<script src="js/nav.js"></script> 
 	</div>

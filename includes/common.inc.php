@@ -24,7 +24,7 @@ require ROOT_PATH.'includes/mysql.func.php';
 
 //执行耗时
 define('START_TIME',_runtime());
-//$GLOBALS['start_time'] = _runtime();
+
 
 //数据库连接
 define('DB_HOST','127.0.0.1:3306');
@@ -51,6 +51,7 @@ $_message = _fetch_array("SELECT
 												 	   			tg_touser='{$_COOKIE['username']}'
 ");
 
+//显示未读和已读消息
 if (empty($_message['count'])) {
 	$GLOBALS['message'] = '<strong class="noread"><a href="member_message.php">(0)</a></strong>';
 } else {
@@ -89,8 +90,6 @@ if (!!$_rows = _fetch_array("SELECT
 	$_system['register'] = $_rows['tg_register'];
 	$_system['string'] = $_rows['tg_string'];
 	$_system = _html($_system);
-	
-	
 } else {
 	exit('系统表异常，请管理员检查！');
 }

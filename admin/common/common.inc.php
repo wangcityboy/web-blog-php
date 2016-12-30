@@ -93,11 +93,4 @@ if (!!$_rows = _fetch_array("SELECT
 	exit('系统表异常，请管理员检查！');
 }
 
-
-
-
-
-
-
-
 ?>

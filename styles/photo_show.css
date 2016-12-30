@@ -1,5 +1,7 @@
 @CHARSET "UTF-8";
 
+* { margin: 0; padding: 0 }
 
-
-
+#container p{
+	color:red;
+}

@@ -51,6 +51,7 @@ body { font-size: 12px; background: #ececec; color: #5d5d5d; }
 #page_text ul li {
 	display:inline;
 }
+
 #page_text ul li a {
 	color:#333;
 }
@@ -70,7 +71,7 @@ body { font-size: 12px; background: #ececec; color: #5d5d5d; }
 }
 #member #member_sidebar {
 	width:200px;
-	height:750px;
+	height:500px;
 	float:left;
 	background:#999d9c;
 }
@@ -78,6 +79,7 @@ body { font-size: 12px; background: #ececec; color: #5d5d5d; }
 	width:200px;
 	text-indent:0;
 	text-align:center;
+	
 }
 #member #member_sidebar dl dt {
 	height:40px;

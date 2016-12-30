@@ -68,7 +68,6 @@ $_result = _query("SELECT
 <?php 
 	require ROOT_PATH.'includes/title.inc.php';
 ?>
-
 <?php 
 	require ROOT_PATH.'includes/header.inc.php';
 ?>
@@ -79,10 +78,9 @@ $_result = _query("SELECT
 <script type="text/javascript" src="js/blocksit.min.js"></script>
 <script type="text/javascript" src="js/photo.js"></script>
 <link rel="stylesheet" href="styles/pubu.css" type="text/css" media='screen'/>
-
 </head>
-<body>
 
+<body>
 <div id="wrapper">
 	<div id="container" style="width:1000px;">
 	
@@ -111,7 +109,7 @@ $_result = _query("SELECT
 	<?php 
 	} else {
 		echo '<form method="post" action="photo_show.php?id='.$_dirhtml['id'].'">';
-		echo '<p>请输入密码：<input type="password" name="password" /> <input type="submit" value="确认" /></p>';
+		echo '<p>请输入相册密码：<input type="password" name="password" /> <input type="submit" value="确认" /></p>';
 		echo '</form>';
 	}
 	?>

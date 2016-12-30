@@ -137,9 +137,8 @@ $_result = _query("SELECT
 <link rel="stylesheet" type="text/css" href="css/basic.css" />
 <link rel="stylesheet" type="text/css" href="css/photo_show.css" />
 </head>
+
 <body>
-
-
 <div id="member">
 <?php 
 	require ROOT_PATH.'common/member.inc.php';
@@ -149,7 +148,6 @@ $_result = _query("SELECT
 	<?php 
 	
 	if (empty($_dirhtml['type']) || $_COOKIE['photo'.$_dirhtml['id']] == $_dirhtml['name'] || isset($_SESSION['admin'])) {
-	
 		$_html = array();
 		while (!!$_rows = _fetch_array_list($_result)) {
 			$_html['id'] = $_rows['tg_id'];
@@ -159,13 +157,11 @@ $_result = _query("SELECT
 			$_html['readcount'] = $_rows['tg_readcount'];
 			$_html['commendcount'] = $_rows['tg_commendcount'];
 			$_html = _html($_html);
-
 	?>
 	<dl>
 		<dt><a href="photo_detail.php?id=<?php echo $_html['id']?>"><img src="<?php echo $_html['url']?>" width="230" height="270"/></a></dt>
 		<?php 
 			if ($_html['username'] == $_COOKIE['username'] || isset($_SESSION['admin'])) {
-			
 		?>
 		
 		<dd><p><a href="photo_show.php?action=delete&id=<?php echo $_html['id']?>">删除</a></p></dd>

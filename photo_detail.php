@@ -6,7 +6,6 @@ define('IN_TG',true);
 define('SCRIPT','photo_detail');
 //引入公共文件
 require dirname(__FILE__).'/includes/common.inc.php';
-
 //取值
 if (isset($_GET['id'])) {
 	if (!!$_rows = _fetch_array("SELECT 
@@ -100,7 +99,6 @@ if (isset($_GET['id'])) {
 		} else {
 			$_html['next'] = '<span></span>';
 		}
-		
 	} else {
 		_alert_back('不存在此图片！');
 	}
@@ -115,7 +113,6 @@ if (isset($_GET['id'])) {
 <?php 
 	require ROOT_PATH.'includes/title.inc.php';
 ?>
-
 <?php 
 	require ROOT_PATH.'includes/header.inc.php';
 ?>

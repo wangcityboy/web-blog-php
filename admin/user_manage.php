@@ -68,8 +68,6 @@ _page("SELECT tg_id FROM tg_user",10);
 </head>
 <body>
 
-
-  
 <div id="member">
 	<?php 
 		require ROOT_PATH.'common/member.inc.php';
@@ -86,7 +84,11 @@ _page("SELECT tg_id FROM tg_user",10);
 
 					$_htmllist['id'] = $_rows['tg_id'];
 					$_htmllist['username'] = $_rows['tg_username'];
-					$_htmllist['sex'] = $_rows['tg_sex'];
+					if($_rows['tg_sex'] == 1){
+						$_htmllist['sex'] = "男";
+					}else{
+						$_htmllist['sex'] = "女";
+					}
 					$_htmllist['email'] = $_rows['tg_email'];
 					$_htmllist['qq'] = $_rows['tg_qq'];
 					$_htmllist["url"] = $_rows['tg_url'];
@@ -111,11 +113,10 @@ _page("SELECT tg_id FROM tg_user",10);
 				}
 				_free_result($_result);
 			?>
-			<?php _paged(2);?>
 			<tr><td colspan="9"><label for="all">全选 <input type="checkbox" name="chkall" id="all" /></label> <input type="submit" value="批删除" /></td></tr>
 		</table>
 		</form>
-	
+		<?php _paging(1,2);?>
 	</div>
 </div>
 

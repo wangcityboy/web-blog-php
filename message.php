@@ -6,24 +6,20 @@ define('IN_TG',true);
 define('SCRIPT','message');
 //引入公共文件
 require dirname(__FILE__).'/includes/common.inc.php';	
-
 ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
 <?php 
 	require ROOT_PATH.'includes/title.inc.php';
 ?>
-
 <?php 
 	require ROOT_PATH.'includes/header.inc.php';
 ?>
-
 </head>
 
 <body>
-  
 <div id="msg">    
 	<?php
 		$query = "SELECT tg_content FROM tg_message";

@@ -32,21 +32,21 @@ $(document).ready(function() {
 	 <div class="main_content">
 	   <div class="logo">
 	   </div>
-	   <div class="book">
-	     <section class="welcome_text">
-	        <h2>Welcome to our website</h2>
-	        <p>如果这辈子，只能跟一个人相守到老，激情慢慢褪去，看腻身边的人，感觉不到爱，没别的选择，生活平淡如水，你会不会因此感到寂寞？我们当初选择了爱，就是选择了和某个人一起寂寞到老。</p>
-	        <p>两个人的世界里，总要一个闹着、一个笑着，一个吵着、一个哄着。如果一个人总是输，不是口才不够好，只是不忍心把最伤人的话说出口。总要一个人“输”了，两个人才能赢了。</p>
-	        <a href="timeline.html" class="more">read more</a>
-	     </section>
+	   	  <div class="book">
+		     <section class="welcome_text">
+		        <h2>Welcome to our website</h2>
+		        <p>如果这辈子，只能跟一个人相守到老，激情慢慢褪去，看腻身边的人，感觉不到爱，没别的选择，生活平淡如水，你会不会因此感到寂寞？我们当初选择了爱，就是选择了和某个人一起寂寞到老。</p>
+		        <p>两个人的世界里，总要一个闹着、一个笑着，一个吵着、一个哄着。如果一个人总是输，不是口才不够好，只是不忍心把最伤人的话说出口。总要一个人“输”了，两个人才能赢了。</p>
+		        <a href="timeline.html" class="more">read more</a>
+		     </section>
 	     
-	    <div id="coin-slider">
-	        	<ul>
-		            <li><a href="#"><img src="images/coin_pic6.jpg" ></a></li>
-		            <li><a href="#"><img src="images/coin_pic7.jpg" ></a></li>
-		            <li><a href="#"><img src="images/coin_pic8.jpg" ></a></li>
-				</ul>
-	    </div> 
+		    <div id="coin-slider">
+		        	<ul>
+			            <li><a href="#"><img src="images/coin_pic6.jpg" ></a></li>
+			            <li><a href="#"><img src="images/coin_pic7.jpg" ></a></li>
+			            <li><a href="#"><img src="images/coin_pic8.jpg" ></a></li>
+					</ul>
+		    </div> 
 		</div>
 	</div>
 
@@ -81,7 +81,7 @@ $(document).ready(function() {
             </dl>
           
 		  <h2><p>联系<span>方式</span></p></h2>
-		  <dl>
+		   <dl>
 			<dt>电子邮件：<label>wangcityboy@163.com</label></dt>
 			<dt>个人网站：<label> <a href="http://www.wanghaifeng.net/web-blog-php">http://www.wanghaifeng.net</a></label></dt>
 			<dt>新浪微博：<label>云飞凌风</label></dt>
