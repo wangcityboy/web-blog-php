@@ -22,7 +22,7 @@ if ($_GET['action'] == 'login') {
 	$_clean['time'] = _check_time($_POST['time']);
 	
 	//到数据库去验证
-	if (!!$_rows = _fetch_array("SELECT tg_username,tg_level FROM tg_user WHERE tg_username='{$_clean['username']}' AND tg_password='{$_clean['password']}'  LIMIT 1")) {
+	if (!!$_rows = _fetch_array("SELECT tg_username,tg_level,tg_uniqid FROM tg_user WHERE tg_username='{$_clean['username']}' AND tg_password='{$_clean['password']}'  LIMIT 1")) {
 		//登录成功后，记录登录信息
 		_query("UPDATE tg_user SET 
 															tg_last_time=NOW(),
@@ -32,7 +32,7 @@ if ($_GET['action'] == 'login') {
 															tg_username='{$_rows['tg_username']}'				
 													");
 
-		_setcookies($_rows['tg_username'],$_rows['tg_uniqid'],$_clean['time']);
+		_setcookies($_rows['tg_username'],$_rows['uniqid'],$_clean['time']);
 		
 		if ($_rows['tg_level'] == 1) {
 			$_SESSION['admin'] = $_rows['tg_username'];

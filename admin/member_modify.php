@@ -102,6 +102,7 @@ if (isset($_COOKIE['username'])) {
 				$_html['face_html'] .= '<option value="resource/face/m0'.$_num.'.gif">resource/face/m0'.$_num.'.gif</option>';
 			}
 		}
+
 		foreach (range(10,64) as $_num) {
 			if ($_html['face'] == 'face/m'.$_num.'.gif') {
 				$_html['face_html'] .= '<option value="resource/face/m'.$_num.'.gif" selected="selected">resource/face/m'.$_num.'.gif</option>';

@@ -4,8 +4,8 @@ body {
 	font-size: 12px; 
 	/* background-image:url(../resource/banner/banner43.jpg),url(../resource/banner/banner01.gif);
 	background-repeat: no-repeat, repeat;  
-	background-position: 0 0, 400px 0;  */
-	background: #000000 url(../resource/banner/banner43.jpg) center 0 scroll no-repeat; 
+	background-position: 0 0, 400px 0; */
+	background: #000000 url(../resource/banner/banner43.jpg) center 0 scroll no-repeat;  
 }
 
 
@@ -21,7 +21,7 @@ a:hover { text-decoration: none; }
 .blank { height: 5px; overflow: hidden; width: 100%; margin: auto; clear: both }
 
 
-
+/*页码设置*/
 #page_num {
 	height:20px;
 	clear:both;
@@ -29,6 +29,7 @@ a:hover { text-decoration: none; }
 	position:relative;
 	font-size:12px;
 }
+
 #page_num ul {
 	position:absolute;
 	right:30px;
@@ -73,55 +74,5 @@ a:hover { text-decoration: none; }
 	color:#FF1493
 }
 
-#member {
-	width:800px;
-	height:550px;
-	margin:1% 0 0 18%;
-	border:1px solid #ccc;
-	font-size:12px;
-}
-#member  h2 {
-	text-indent:0;
-	text-align:center;
-	height:30px;
-	line-height:30px;
-}
-#member #member_sidebar {
-	width:300px;
-	height:520px;
-	float:left;
-}
-#member #member_sidebar dl {
-	width:300px;
-	text-indent:0;
-	text-align:center;
-}
-#member #member_sidebar dl dt {
-	height:40px;
-	line-height:40px;
-	background:#999;
-	font-weight:bold;
-	text-align:center;
-	color:#fff;
-}
-#member #member_sidebar dl dd {
-	height:40px;
-	line-height:40px;
-	background:#eee;
-	font-weight:bold;
-	text-align:center;
-}
-#member #member_sidebar dl dd a {
-	display:block;
-	color:#333;
-	text-decoration:none;
-}
-#member #member_sidebar dl dd a:hover {
-	background:#ccc;
-}
-#member #member_main {
-	width:480px;
-	height:520px;
-	float:right;
-}
+
 

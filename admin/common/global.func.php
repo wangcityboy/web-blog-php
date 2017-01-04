@@ -140,6 +140,7 @@ function resizejpg($imgsrc,$imgdst,$imgwidth,$imgheight)
 
 function _uniqid($_mysql_uniqid,$_cookie_uniqid) {
 	if ($_mysql_uniqid != $_cookie_uniqid) {
+		_alert_back($_cookie_uniqid);
 		_alert_back('唯一标识符异常！');
 	}
 }

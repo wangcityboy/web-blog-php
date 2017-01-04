@@ -37,6 +37,7 @@ require dirname(__FILE__).'/includes/common.inc.php'; //转换成硬路径，速
 <head>
 <?php 
 	require ROOT_PATH.'includes/title.inc.php';
+	require ROOT_PATH.'includes/background.inc.php';
 ?>
 <?php 
 	require ROOT_PATH.'includes/header.inc.php';

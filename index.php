@@ -110,6 +110,7 @@ $_photo = _fetch_array("SELECT
 <head>
 <?php 
 	require ROOT_PATH.'includes/title.inc.php';
+	require ROOT_PATH.'includes/background.inc.php';
 ?>
 <?php 
 	require ROOT_PATH.'includes/header.inc.php';
@@ -118,8 +119,9 @@ $_photo = _fetch_array("SELECT
 <script type="text/javascript"  src="js/jquery.min.js"></script>
 <script type="text/javascript"  src="js/sliders.js"></script>
 <script type="text/javascript"  src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
-</head>
 
+</head>
+	
 <body>
 <article id="index">
 <!--首页左边栏目 -->

@@ -4,17 +4,26 @@
 	margin:15px auto;
 	font-size:14px;
 }
+
 #member #member_main dl dd {
 	padding:10px 0;
 	border-bottom:1px dashed #999;
 }
-#member #member_main dl dd input.text {
-	width:180px;
+
+#member #member_main dl dd input.website {
+	width:150px;
 	height:19px;
 	border:1px dashed #333;
 	background:#ff7f00;
-	
 }
+
+#member #member_main dl dd input.text {
+	width:350px;
+	height:19px;
+	border:1px dashed #333;
+	background:#ff7f00;
+}
+
 #member #member_main dl dd input.submit {
 	width:100px;
 	height:19px;

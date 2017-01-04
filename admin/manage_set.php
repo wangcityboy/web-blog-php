@@ -19,7 +19,9 @@ if ($_GET['action'] == 'set') {
 												 LIMIT 
 															1"
 	)) {
+		
 		_uniqid($_rows['tg_uniqid'],$_COOKIE['uniqid']);
+		include ROOT_PATH.'common/check.func.php';
 		$_clean = array();
 		$_clean['webname'] = $_POST['webname'];
 		$_clean['article'] = $_POST['article'];
@@ -32,6 +34,7 @@ if ($_GET['action'] == 'set') {
 		$_clean['register'] = $_POST['register'];
 		$_clean['string'] = $_POST['string'];
 		$_clean = _mysql_string($_clean);
+	
 		
 		//写入数据库
 		_query("UPDATE tg_system SET 
@@ -116,14 +119,24 @@ if (!!$_rows = _fetch_array("SELECT
 		$_html['photo_html'] = '<select name="photo"><option value="10">每页10张</option><option value="20" selected="selected">每页20张</option></select>';
 	}
 	
-	//皮肤
-	if ($_html['skin'] == 1) {
-		$_html['skin_html'] = '<select name="skin"><option value="1" selected="selected">一号皮肤</option><option value="2">二号皮肤</option><option value="3">三号皮肤</option></select>';
-	} elseif ($_html['skin'] == 2) {
-		$_html['skin_html'] = '<select name="skin"><option value="1">一号皮肤</option><option value="2" selected="selected">二号皮肤</option><option value="3">三号皮肤</option></select>';
-	} elseif ($_html['skin'] == 3) {
-		$_html['skin_html'] = '<select name="skin"><option value="1">一号皮肤</option><option value="2">二号皮肤</option><option value="3" selected="selected">三号皮肤</option></select>';
+	//背景选择
+	$_html['skin_html'] = '<select name="skin">';
+	foreach (range(1,9) as $_num) {
+		if ($_html['skin'] == './resource/banner/banner'.$_num.'.jpg') {
+			$_html['skin_html'] .= '<option value="./resource/banner/banner'.$_num.'.jpg" selected="selected">./resource/banner/banner'.$_num.'.jpg</option>';
+		} else {
+			$_html['skin_html'] .= '<option value="./resource/banner/banner'.$_num.'.jpg">./resource/banner/banner'.$_num.'.jpg</option>';
+		}
 	}
+	foreach (range(10,70) as $_num) {
+		if ($_html['skin'] == './resource/banner/banner'.$_num.'.jpg') {
+			$_html['skin_html'] .= '<option value="./resource/banner/banner'.$_num.'.jpg" selected="selected">./resource/banner/banner'.$_num.'.jpg</option>';
+		} else {
+			$_html['skin_html'] .= '<option value="./resource/banner/banner'.$_num.'.jpg">./resource/banner/banner'.$_num.'.jpg</option>';
+		}
+	}
+	$_html['skin_html'] .= '</select>';
+	
 	
 	//发帖
 	if ($_html['post'] == 30) {
@@ -181,11 +194,11 @@ if (!!$_rows = _fetch_array("SELECT
 		<h2>网站系统设置</h2>
 		<form method="post" action="?action=set">
 		<dl>
-			<dd>网 站 名 称：<input type="text" name="webname" class="text" value="<?php echo $_html['webname']?>" /></dd>
+			<dd>网 站 名 称：<input type="text" name="webname" class="website" value="<?php echo $_html['webname']?>" /></dd>
     		<dd>文章每页列表数：<?php echo $_html['article_html'];?></dd>
     		<dd>博友每页列表数：<?php echo $_html['blog_html'];?></dd>
     		<dd>相册每页列表数：<?php echo $_html['photo_html'];?></dd>
-    		<dd>站点 默认 皮肤：<?php echo $_html['skin_html'];?></dd>
+    		<dd>更换网站背景图：<?php echo $_html['skin_html'];?>&nbsp;&nbsp;<img src= "http://wanghaifeng.net/web-blog-php/resource/banner/banner69.jpg"  height="19" /></dd>
     		<dd>非法 字符 过滤：<input type="text" name="string" class="text" value="<?php echo $_html['string'];?>" /> (*请用|线隔开)</dd>
 			<dd>每次 发帖 限制：<?php echo $_html['post_html'];?></dd>
 			<dd>每次 回帖 限制：<?php echo $_html['re_html'];?></dd>

@@ -72,6 +72,7 @@ if (isset($_GET['id'])) {
 <head>
 <?php 
 	require ROOT_PATH.'includes/title.inc.php';
+	require ROOT_PATH.'includes/background.inc.php';
 ?>
 <?php 
 	require ROOT_PATH.'includes/header.inc.php';
