@@ -166,8 +166,8 @@ if (isset($_GET['id'])) {
 		<form method="post" name="post" action="?action=modify">
 			<input type="hidden" value="<?php echo $_html['id']?>" name="id" />
 			<dl>
-			
-				<dt>请认真修改以下内容</dt>
+
+			    <dt>请认真修改以下内容</dt>
 				<dd>
 					日志分类： 
 					<select name="classify" id="select">
@@ -180,15 +180,13 @@ if (isset($_GET['id'])) {
 						<option value="10013">生活随笔</option>
 						<option value="10014">网络文摘</option>
 					</select>
-				
-     
-     
-
 				</dd>
+				
 				<dd>
 					标 题：<input type="text" name="title"
 						value="<?php echo $_html['title']?>" class="text" /> (*必填，2-40位)
 				</dd>
+				
 				<dd>
 					<p>
 						角色扮演：<input type="text" id="url1" name="imagepath"
@@ -196,6 +194,7 @@ if (isset($_GET['id'])) {
 							id="image1" value="选择图片" />（网络图片 + 本地上传）
 					</p>
 				</dd>
+				
 				<dd>
 					<textarea name="content"
 						style="width: 100%; height: 500px; visibility: hidden;"><?php echo htmlspecialchars_decode($_html['content'])?></textarea>

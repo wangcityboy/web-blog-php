@@ -198,7 +198,7 @@ if (!!$_rows = _fetch_array("SELECT
     		<dd>文章每页列表数：<?php echo $_html['article_html'];?></dd>
     		<dd>博友每页列表数：<?php echo $_html['blog_html'];?></dd>
     		<dd>相册每页列表数：<?php echo $_html['photo_html'];?></dd>
-    		<dd>更换网站背景图：<?php echo $_html['skin_html'];?>&nbsp;&nbsp;<img src= "http://wanghaifeng.net/web-blog-php/resource/banner/banner69.jpg"  height="19" /></dd>
+    		<dd>更换网站背景图：<?php echo $_html['skin_html'];?></dd>
     		<dd>非法 字符 过滤：<input type="text" name="string" class="text" value="<?php echo $_html['string'];?>" /> (*请用|线隔开)</dd>
 			<dd>每次 发帖 限制：<?php echo $_html['post_html'];?></dd>
 			<dd>每次 回帖 限制：<?php echo $_html['re_html'];?></dd>

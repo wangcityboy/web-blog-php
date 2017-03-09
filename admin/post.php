@@ -10,8 +10,6 @@ require dirname(__FILE__).'/common/common.inc.php';
 if (!isset($_COOKIE['username'])) {
 	_location('发帖前，必须登录','index.php');
 }
-
-
 //将帖子写入数据库
 if ($_GET['action'] == 'post') {
 	if (!!$_rows = _fetch_array("SELECT 
@@ -112,10 +110,10 @@ if ($_GET['action'] == 'post') {
 		});
 	});
 </script>
-		
-		
-		
+			
 </head>
+
+
 <body>
 <div id="member">
 <?php 

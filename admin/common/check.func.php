@@ -21,8 +21,6 @@ if (!function_exists('_mysql_string')) {
 function _check_uniqid($_first_uniqid,$_end_uniqid) {
 	
 	if ((strlen($_first_uniqid) != 40) || ($_first_uniqid != $_end_uniqid)) {
-		_alert_back($_first_uniqid);
-		_alert_back($_end_uniqid);
 		_alert_back('唯一标识符异常');
 	}
 	

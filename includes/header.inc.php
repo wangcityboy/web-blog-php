@@ -24,10 +24,10 @@ if (!defined('IN_TG')) {
 			<li><a href="article.php">原创文章</a></li>
 			<li><a href="photo.php">记忆碎片</a></li>
 			<li><a href="message.php">用户留言</a></li>
-			<li><a href="http://wanghaifeng.net:3001/">闲情碎语</a></li>
-			<li><a href="http://wanghaifeng.net:3000/">我爱电影网</a></li>
-			<li><a href="../api-blog-php/index.php">我的工作云</a></li>
-			<li><a href="admin/index.php">管理员后台</a></li>
+			<li><a href="http://wanghaifeng.net:3001/" target="_blank">闲情碎语</a></li>
+			<li><a href="http://wanghaifeng.net:3000/" target="_blank">我爱电影网</a></li>
+			<li><a href="../api-blog-php/index.php" target="_blank">我的工作云</a></li>
+			<li><a href="admin/index.php" target="_blank">管理员后台</a></li>
 		</ul>
 	</div>	
 </div>
